@@ -6,7 +6,7 @@ export function personalize(html) {
   const replace=(start,end,content)=>{const a=html.indexOf(start),b=html.indexOf(end,a);if(a<0||b<0)throw Error('Sección no encontrada: '+start);html=html.slice(0,a)+content+html.slice(b);};
   html=html.replace(/<img[^>]*>/g,'<img alt="Monograma de Mathias Kneis" class="w-full h-full object-cover" src="./assets/portrait.svg">');
   html=html.replaceAll('Disponible para proyectos','Datos · Backend · BI').replaceAll('Disponible para nuevos retos • Madrid, ES','Datos, tecnología y negocio • Valdivia, Chile').replaceAll('Madrid, ES','Valdivia, Chile').replaceAll('Staff Arch &amp; Craft','Data &amp; Backend');
-  html=html.replace('Senior Software Engineer &amp; Product Designer','Data &amp; BI Analyst · Backend Developer');
+  html=html.replace('Senior Software Engineer &amp; Product Designer','Data &amp; BI Analyst · Backend en Ruby on Rails');
   html=html.replace(/Especializado en la intersección[\s\S]*?rendimiento milimétrico\./,'Ingeniero Comercial y Máster en Big Data &amp; Data Science. Conecto las necesidades del negocio con soluciones de datos, desarrollo backend y automatización. Trabajo con Ruby on Rails, MongoDB, SQL, Power BI, Apache NiFi, Python y APIs REST para construir sistemas confiables y mejorar procesos. Integro IA aplicada al desarrollo con Codex, agentes, skills y MCPs.');
   html=html.replace('Ver Proyectos Seleccionados','Ver experiencia').replace('href="./proyectos.html">\n<span class="">Ver experiencia','href="#experiencia">\n<span class="">Ver experiencia');
   html=html.replace('CV · próximamente','Ver CV en esta página').replace('href="#cv-pendiente" aria-describedby="cv-pendiente"','href="#experiencia"');
