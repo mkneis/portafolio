@@ -1,13 +1,14 @@
 # Portafolio · Nordic Monolith
 
-Adaptación estática del diseño de Stitch para GitHub Pages. Presentación personalizada con la experiencia, formación y habilidades de Mathias Kneis; proyectos y diario están vacíos. Sitio: https://mkneis.github.io/portafolio/
+Adaptación estática del diseño de Stitch para GitHub Pages. Presentación personalizada con la experiencia, formación y habilidades de Mathias Kneis; incluye el caso de estudio de este portafolio y mantiene el diario vacío. Sitio: https://mkneis.github.io/portafolio/
 
 ## Archivos
 
 - `referencias-stitch/`: copia completa de los HTML, capturas y guía de diseño originales. Se conserva como contexto; no se publica.
-- `dist/`: sitio listo para publicar, con presentación, proyectos y blog, estilos e imagen local.
+- `dist/`: sitio listo para publicar, con presentación, listado de proyectos, caso de estudio, blog, estilos e imagen local.
 - `scripts/prepare.mjs`: adapta la presentación de Stitch y genera los estados vacíos.
 - `scripts/profile.mjs`: contenido personal y adaptación basada en el CV de 2026.
+- `scripts/projects.mjs`: listado, tarjeta y caso de estudio del portafolio.
 - `styles/input.css` y `dist/assets/adjustments.css`: estilos base y ajustes de navegación, accesibilidad y pantallas pequeñas.
 - `.github/workflows/pages.yml`: publicación de `dist/` al subir cambios a `main`.
 
@@ -29,6 +30,6 @@ Documentación oficial: https://docs.github.com/en/pages/getting-started-with-gi
 
 ## Pendiente de personalizar
 
-La presentación usa el CV de 2026 para el perfil, experiencia, formación, certificaciones, herramientas e idiomas. La foto de muestra se sustituyó por un monograma MK. GitHub, LinkedIn y correo están configurados. El teléfono y el PDF original no están incluidos en el repositorio ni publicados. El botón de CV lleva a la experiencia dentro de la página. Los proyectos personales del CV no se publicaron: proyectos y blog permanecen vacíos por decisión del propietario.
+La presentación usa el CV de 2026 para el perfil, experiencia, formación, certificaciones, herramientas e idiomas. La foto de muestra se sustituyó por un monograma MK. GitHub, LinkedIn y correo están configurados. El teléfono y el PDF original no están incluidos en el repositorio ni publicados. El botón de CV lleva a la experiencia dentro de la página. Los proyectos personales del CV no se publicaron: el blog permanece vacío y el primer proyecto documenta la construcción de este portafolio.
 
 Las fuentes Inter y Material Symbols se cargan de Google Fonts; el resto de estilos y la imagen del sitio se sirven localmente. Los ejemplos de proyectos y artículos solo se conservan en la carpeta de referencia.

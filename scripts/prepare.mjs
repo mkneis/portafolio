@@ -1,6 +1,7 @@
 import fs from 'node:fs/promises';
 import vm from 'node:vm';
 import {personalize} from './profile.mjs';
+import {projectPages} from './projects.mjs';
 const root = new URL('../', import.meta.url);
 const read = p => fs.readFile(new URL(p, root), 'utf8');
 const write = (p, data) => fs.writeFile(new URL(p, root), data);
@@ -48,6 +49,7 @@ html = html.replace('Abierto a colaboraciones estratégicas, roles de liderazgo 
 html = html.replace(/<a([^>]+)href="https:\/\/(?:github.com|linkedin.com|x.com|read.cv)"([^>]*)>/g,'<a$1href="#contacto"$2>');
 html = html.replace('<main ', '<a class="skip-link" href="#contenido">Saltar al contenido</a><main id="contenido" ');
 html = personalize(html);
+html = html.replace('</head>', '<link rel="stylesheet" href="./assets/projects.css"></head>');
 await write('dist/index.html',html);
 for (const [file,title,description,active] of [
   ['proyectos.html','Proyectos seleccionados','Aquí aparecerán los proyectos y casos de estudio. Todavía no hay proyectos publicados.',1],
@@ -60,4 +62,8 @@ for (const [file,title,description,active] of [
   await write('dist/'+file,page);
 }
 await write('dist/.nojekyll','');
-console.log('Preparadas 3 páginas estáticas en dist/.');
+const projects = projectPages(html, nav);
+await write('dist/index.html', projects.home);
+await write('dist/proyectos.html', projects.listing);
+await write('dist/proyecto-portafolio.html', projects.detail);
+console.log('Preparadas 4 páginas estáticas en dist/.');
