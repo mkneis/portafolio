@@ -33,3 +33,8 @@ Documentación oficial: https://docs.github.com/en/pages/getting-started-with-gi
 La presentación usa el CV de 2026 para el perfil, experiencia, formación, certificaciones, herramientas e idiomas. La foto de muestra se sustituyó por un monograma MK. GitHub, LinkedIn y correo están configurados. El teléfono y el PDF original no están incluidos en el repositorio ni publicados. El botón de CV lleva a la experiencia dentro de la página. Los proyectos personales del CV no se publicaron: el blog permanece vacío y el primer proyecto documenta la construcción de este portafolio.
 
 Las fuentes Inter y Material Symbols se cargan de Google Fonts; el resto de estilos y la imagen del sitio se sirven localmente. Los ejemplos de proyectos y artículos solo se conservan en la carpeta de referencia.
+
+## Proyecto Brian Dejacker
+
+La segunda ficha documenta la web de la banda, la exploración de Sites y la integración de Merchbag. El recorrido MP4 suministrado por el propietario se sirve desde dist/assets/brian-dejacker/ con controles y sin reproducción automática. scripts/band-project.mjs genera la ficha y el caso de estudio; las explicaciones enlazan la documentación oficial de Sites y Merchbag.
+
