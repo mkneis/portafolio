@@ -1,0 +1,717 @@
+<!DOCTYPE html><html class="dark" lang="es" style="min-height: 100vh; height: auto !important; overflow-y: auto !important;"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta content="web_standard" name="shell-type">
+<title>Proyectos Seleccionados — Portfolio</title>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<style>
+    @layer base {
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        overscroll-behavior: auto;
+      }
+    }
+  </style>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-container-low": "#1b1b1d",
+            "surface-dim": "#131315",
+            "tertiary-fixed": "#e7e1dd",
+            "surface-bright": "#39393b",
+            "surface-container-highest": "#353437",
+            "on-secondary-container": "#b4b4bd",
+            "on-tertiary-fixed": "#1d1b19",
+            "surface-container-high": "#2a2a2c",
+            "inverse-on-surface": "#303032",
+            "on-error-container": "#ffdad6",
+            "on-primary": "#2f3131",
+            "on-primary-fixed-variant": "#454747",
+            "primary-fixed": "#e2e2e2",
+            "primary-fixed-dim": "#c6c6c7",
+            "on-background": "#e5e1e4",
+            "error": "#ffb4ab",
+            "background": "#131315",
+            "outline-variant": "#444748",
+            "error-container": "#93000a",
+            "surface-container-lowest": "#0e0e10",
+            "on-primary-container": "#636565",
+            "tertiary": "#ffffff",
+            "tertiary-fixed-dim": "#cbc6c1",
+            "outline": "#8e9192",
+            "on-error": "#690005",
+            "on-surface-variant": "#c4c7c8",
+            "surface-variant": "#353437",
+            "surface-container": "#201f21",
+            "on-secondary-fixed": "#1a1b22",
+            "on-primary-fixed": "#1a1c1c",
+            "inverse-primary": "#5d5f5f",
+            "primary": "#ffffff",
+            "secondary": "#c6c6cf",
+            "primary-container": "#e2e2e2",
+            "secondary-fixed-dim": "#c6c6cf",
+            "on-secondary": "#2f3037",
+            "inverse-surface": "#e5e1e4",
+            "on-surface": "#e5e1e4",
+            "tertiary-container": "#e7e1dd",
+            "secondary-container": "#45464e",
+            "surface": "#131315",
+            "on-tertiary": "#32302d",
+            "surface-tint": "#c6c6c7",
+            "on-secondary-fixed-variant": "#45464e",
+            "secondary-fixed": "#e2e1eb",
+            "on-tertiary-fixed-variant": "#494643",
+            "on-tertiary-container": "#676460"
+          },
+          borderRadius: {
+            DEFAULT: "0.25rem",
+            lg: "0.5rem",
+            xl: "0.75rem",
+            full: "9999px"
+          },
+          spacing: {
+            "space-lg": "1.5rem",
+            "space-sm": "0.5rem",
+            "space-xs": "0.25rem",
+            "gutter-sm": "1rem",
+            "space-md": "0.875rem",
+            margin: "3rem",
+            "margin-sm": "1.25rem",
+            "space-xl": "2.5rem",
+            gutter: "1.5rem"
+          },
+          fontFamily: {
+            "label-md": ["Inter", "sans-serif"],
+            "headline-lg": ["Inter", "sans-serif"],
+            "label-sm": ["Inter", "sans-serif"],
+            "headline-md": ["Inter", "sans-serif"],
+            "body-lg": ["Inter", "sans-serif"],
+            "body-md": ["Inter", "sans-serif"],
+            "body-sm": ["Inter", "sans-serif"],
+            "headline-xl": ["Inter", "sans-serif"],
+            "display-lg-mobile": ["Inter", "sans-serif"],
+            "display-lg": ["Inter", "sans-serif"]
+          },
+          fontSize: {
+            "label-md": ["13px", { lineHeight: "16px", letterSpacing: "0.01em", fontWeight: "500" }],
+            "headline-lg": ["24px", { lineHeight: "32px", letterSpacing: "-0.02em", fontWeight: "500" }],
+            "label-sm": ["11px", { lineHeight: "14px", letterSpacing: "0.04em", fontWeight: "600" }],
+            "headline-md": ["20px", { lineHeight: "28px", letterSpacing: "-0.015em", fontWeight: "500" }],
+            "body-lg": ["17px", { lineHeight: "26px", letterSpacing: "-0.01em", fontWeight: "400" }],
+            "body-md": ["15px", { lineHeight: "24px", letterSpacing: "-0.005em", fontWeight: "400" }],
+            "body-sm": ["13px", { lineHeight: "18px", letterSpacing: "0em", fontWeight: "400" }],
+            "headline-xl": ["32px", { lineHeight: "40px", letterSpacing: "-0.025em", fontWeight: "600" }],
+            "display-lg-mobile": ["36px", { lineHeight: "44px", letterSpacing: "-0.025em", fontWeight: "600" }],
+            "display-lg": ["56px", { lineHeight: "64px", letterSpacing: "-0.035em", fontWeight: "600" }]
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-background font-body-md text-on-surface antialiased selection:bg-surface-bright selection:text-primary relative min-h-screen" style="min-height: 100vh; height: auto !important; overflow-y: auto !important;">
+<!-- Fixed Top Header -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-surface/80 backdrop-blur-2xl border-b border-outline-variant/15">
+<div class="h-16 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between">
+<!-- Left: Logo & Availability Badge -->
+<div class="flex items-center gap-space-md">
+<a class="flex items-center justify-center w-8 h-8 rounded-lg bg-surface-container-high text-primary font-headline-md text-headline-md tracking-tight select-none border border-outline-variant/20 hover:border-outline-variant/40 transition-colors" href="#">
+          M
+        </a>
+<div class="flex items-center gap-2 pl-space-xs">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider hidden sm:inline">Disponible para proyectos</span>
+</div>
+</div>
+<!-- Right: Links, Dark Mode, Profile -->
+<div class="hidden md:flex items-center justify-center"><div class="bg-surface-container-low/90 backdrop-blur-2xl rounded-full p-1 border border-outline-variant/30 shadow-sm"><nav class="flex items-center gap-1"><a class="flex items-center px-4 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all duration-200" href="#">Presentación &amp; CV</a><a class="flex items-center px-4 py-1.5 rounded-full font-label-md text-label-md bg-primary text-on-primary font-semibold transition-all duration-200" href="#">Proyectos</a><a class="flex items-center px-4 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all duration-200" href="#">Diario / Blog</a><a class="flex items-center px-4 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all duration-200" href="#">Contacto</a></nav></div></div><div class="flex items-center gap-4 sm:gap-space-lg">
+<div class="flex items-center gap-2 sm:gap-space-md text-on-surface-variant">
+<a aria-label="Code Repository" class="flex items-center justify-center w-8 h-8 rounded-full bg-surface-container/60 hover:bg-surface-container-high hover:text-on-surface transition-all border border-outline-variant/10" href="#">
+<span class="material-symbols-outlined text-[18px]">code</span>
+</a>
+<a aria-label="Global Network" class="flex items-center justify-center w-8 h-8 rounded-full bg-surface-container/60 hover:bg-surface-container-high hover:text-on-surface transition-all border border-outline-variant/10" href="#">
+<span class="material-symbols-outlined text-[18px]">public</span>
+</a>
+<a aria-label="Terminal" class="flex items-center justify-center w-8 h-8 rounded-full bg-surface-container/60 hover:bg-surface-container-high hover:text-on-surface transition-all border border-outline-variant/10" href="#">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+</a>
+<a aria-label="Email Communication" class="flex items-center justify-center w-8 h-8 rounded-full bg-surface-container/60 hover:bg-surface-container-high hover:text-on-surface transition-all border border-outline-variant/10" href="#">
+<span class="material-symbols-outlined text-[18px]">mail</span>
+</a>
+</div>
+<div class="w-12 h-6 rounded-full bg-surface-container p-0.5 flex items-center justify-end cursor-pointer border border-outline-variant/20">
+<div class="w-5 h-5 rounded-full bg-primary flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-surface text-[12px]">dark_mode</span>
+</div>
+</div>
+<div class="pl-1">
+<img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-outline-variant/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1UFjvGj5CEqMEbUTTJWCBuevvScCaTDnjI9mXFJXGKIFNjy-sWDwVISSRo1p5pmzNsenqaiTSdcz4uTVjnLdxhqtPgzyX48Iht8jFQw9AZ802lwFjsCQtdyH2Il_P9neZ50OAjlend27vfbKM6fiVGEUcng4KDdDCx7acQ3J6spOs4oA32BLAAAN4YcvEEgVUtJCbwOwAq1USSB2o9SxdCk6D4qTr9IEXXuGDcYj-tcvIfalBctTVtA">
+</div>
+</div>
+</div>
+</header>
+<!-- Main Content Viewport -->
+<main class="w-full pt-16 pb-32 bg-background min-h-screen">
+<div class="relative w-full">
+<!-- Radial Subtle Ambient Glow -->
+<div class="absolute top-0 left-1/2 -translate-x-1/2 w-[720px] h-[340px] bg-gradient-to-b from-primary/5 via-primary/[0.01] to-transparent blur-3xl pointer-events-none -z-10"></div>
+<div class="max-w-7xl mx-auto px-6 lg:px-12 pt-8 pb-20">
+<!-- Section Header: Editorial & Technical Statement -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-lg pb-12">
+<div class="max-w-2xl space-y-3">
+<div class="flex items-center gap-space-sm text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-mono">Archivo Curado • 2022 — 2025</span>
+<span class="w-1 h-1 rounded-full bg-surface-bright"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">06 Casos de Estudio</span>
+</div>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary tracking-tight font-semibold">
+              Proyectos Seleccionados
+            </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed max-w-xl">
+              Sistemas visuales con precisión milimétrica, interfaces reactivas de alto rendimiento y herramientas de ingeniería concebidas bajo la disciplina del minimalismo nórdico e industrial.
+            </p>
+</div>
+<!-- View Controls & System Status -->
+<div class="flex items-center gap-space-md self-start md:self-end">
+<div class="p-1 rounded-full bg-surface-container-low flex items-center border border-outline-variant/20 shadow-sm">
+<button aria-label="Vista Cuadrícula" class="flex items-center justify-center w-8 h-8 rounded-full bg-surface-container-high text-primary transition-all" id="view-grid-btn">
+<span class="material-symbols-outlined text-[18px]">grid_view</span>
+</button>
+<button aria-label="Vista Lista" class="flex items-center justify-center w-8 h-8 rounded-full text-on-surface-variant hover:text-primary transition-all" id="view-list-btn">
+<span class="material-symbols-outlined text-[18px]">view_agenda</span>
+</button>
+</div>
+<div class="hidden sm:flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-surface-container-low font-label-sm text-label-sm text-on-surface-variant font-mono border border-outline-variant/20">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span class="">TODOS LOS SISTEMAS ONLINE</span>
+</div>
+</div>
+</div>
+<!-- Filter Bar: Cupertino Segmented Navigation -->
+<div class="w-full pb-10 overflow-x-auto scrollbar-none">
+<div class="flex items-center gap-2 p-1.5 rounded-full bg-surface-container-low max-w-max border border-outline-variant/20 shadow-sm">
+<button class="filter-tab px-4 py-2 rounded-full font-label-md text-label-md bg-primary text-on-primary font-medium transition-all duration-200" data-filter="all">
+              Todos
+            </button>
+<button class="filter-tab px-4 py-2 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all duration-200 whitespace-nowrap" data-filter="design-systems">
+              Sistemas de Diseño &amp; Web
+            </button>
+<button class="filter-tab px-4 py-2 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all duration-200 whitespace-nowrap" data-filter="mobile">
+              Apps &amp; Mobile
+            </button>
+<button class="filter-tab px-4 py-2 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all duration-200 whitespace-nowrap" data-filter="opensource">
+              Open Source &amp; Tooling
+            </button>
+<button class="filter-tab px-4 py-2 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all duration-200 whitespace-nowrap" data-filter="webgl">
+              Exploraciones UI / WebGL
+            </button>
+</div>
+</div>
+<!-- Projects Grid Container -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg" id="projects-container">
+<!-- PROJECT 1: HERO / FEATURED (Full 12 Columns) -->
+<article class="project-item lg:col-span-12 rounded-2xl bg-surface-container-low border border-outline-variant/20 overflow-hidden transition-all duration-300 hover:bg-surface-container/80 group" data-category="opensource webgl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-0">
+<!-- Project Narrative & Specs -->
+<div class="lg:col-span-6 p-8 lg:p-12 flex flex-col justify-between space-y-8">
+<div>
+<div class="flex flex-wrap items-center gap-2 mb-4">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high font-label-sm text-label-sm text-primary tracking-wide uppercase border border-outline-variant/20">Destacado</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high font-label-sm text-label-sm text-on-surface-variant border border-outline-variant/20">Arquitectura Core</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono ml-auto">2024</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl text-primary font-semibold tracking-tight group-hover:text-tertiary transition-colors">
+                    Aether UI • Micro-framework de Interacción Táctil
+                  </h2>
+<p class="mt-4 font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                    Librería ligera de física elástica y gestualidad inercial para interfaces táctiles. Resuelve caídas de frames críticas implementando transformaciones aceleradas por hardware en el ciclo de animación del navegador, desacopladas del árbol principal de reconciliación DOM.
+                  </p>
+<!-- Technical Badges -->
+<div class="flex flex-wrap gap-2 mt-6">
+<span class="px-3 py-1 rounded-full bg-surface-container font-label-sm text-label-sm text-secondary font-mono border border-outline-variant/15">TypeScript</span>
+<span class="px-3 py-1 rounded-full bg-surface-container font-label-sm text-label-sm text-secondary font-mono border border-outline-variant/15">WebGL Shaders</span>
+<span class="px-3 py-1 rounded-full bg-surface-container font-label-sm text-label-sm text-secondary font-mono border border-outline-variant/15">Gesture Engine</span>
+<span class="px-3 py-1 rounded-full bg-surface-container font-label-sm text-label-sm text-secondary font-mono border border-outline-variant/15">Zero Runtime CSS</span>
+</div>
+</div>
+<!-- Metrics Visual Block -->
+<div class="pt-6">
+<div class="grid grid-cols-3 gap-4 p-4 rounded-xl bg-surface-container/60 border border-outline-variant/20 backdrop-blur-md">
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase tracking-wider">Rendimiento</span>
+<span class="font-headline-md text-headline-md text-primary font-semibold font-mono">60 FPS</span>
+<span class="font-body-sm text-body-sm text-secondary block">99.8% consistencia</span>
+</div>
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase tracking-wider">Payload</span>
+<span class="font-headline-md text-headline-md text-primary font-semibold font-mono">&lt; 3.8 KB</span>
+<span class="font-body-sm text-body-sm text-secondary block">Min + Gzip</span>
+</div>
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase tracking-wider">Descargas</span>
+<span class="font-headline-md text-headline-md text-primary font-semibold font-mono">120K+</span>
+<span class="font-body-sm text-body-sm text-secondary block">npm este trimestre</span>
+</div>
+</div>
+<!-- Action Triggers -->
+<div class="flex flex-wrap items-center gap-4 mt-8">
+<a class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-primary text-on-primary font-label-md text-label-md font-semibold hover:bg-primary-fixed transition-colors" href="#">
+<span class="">Explorar Caso de Estudio</span>
+<span class="material-symbols-outlined text-[16px]">arrow_outward</span>
+</a>
+<a class="inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md font-medium hover:bg-surface-bright transition-colors border border-outline-variant/20" href="#">
+<span class="material-symbols-outlined text-[16px]">code</span>
+<span class="">GitHub v2.4</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Visual Preview Graphic: Realistic Architectural Window Simulator -->
+<div class="lg:col-span-6 p-6 lg:p-8 flex items-center justify-center bg-surface-container-lowest/70 relative border-t lg:border-t-0 lg:border-l border-outline-variant/20">
+<div class="w-full h-full min-h-[340px] rounded-xl bg-surface-container-low overflow-hidden flex flex-col shadow-2xl relative border border-outline-variant/20">
+<!-- Mac-style micro header bar -->
+<div class="h-9 px-4 bg-surface-container flex items-center justify-between select-none border-b border-outline-variant/20">
+<div class="flex items-center gap-1.5">
+<div class="w-2.5 h-2.5 rounded-full bg-[#ff5f57]/80"></div>
+<div class="w-2.5 h-2.5 rounded-full bg-[#febc2e]/80"></div>
+<div class="w-2.5 h-2.5 rounded-full bg-[#28c840]/80"></div>
+</div>
+<span class="font-mono text-label-sm text-on-surface-variant">aether-kernel-simulator.ts</span>
+<div class="w-8"></div>
+</div>
+<!-- Interactive High-Fidelity Canvas Mockup -->
+<div class="relative flex-1 p-6 flex flex-col justify-between bg-surface-dim">
+<div class="space-y-4">
+<div class="flex items-center justify-between pb-3">
+<span class="font-label-sm text-label-sm text-secondary font-mono">ESTADO: RENDERIZANDO EN BUCLE</span>
+<span class="px-2 py-0.5 rounded bg-primary/10 text-primary font-label-sm text-label-sm font-mono border border-primary/20">SHADERS COMPILADOS</span>
+</div>
+<!-- Framerate Consistency Waveform -->
+<div class="w-full bg-surface-container/50 rounded-lg p-3 border border-outline-variant/15">
+<div class="flex items-center justify-between text-label-sm font-mono text-on-surface-variant mb-2">
+<span class="">LATENCIA DE EVENTO TÁCTIL (ms)</span>
+<span class="text-primary font-semibold">1.4 ms AVG</span>
+</div>
+<svg class="w-full h-24 text-primary" fill="none" preserveAspectRatio="none" viewBox="0 0 400 90">
+<path d="M0,45 C20,44 40,46 60,45 C80,44 100,20 120,45 C140,46 160,44 180,45 C200,45 220,15 240,45 C260,45 280,46 300,45 C320,44 340,30 360,45 C380,46 400,45 400,45" stroke="currentColor" stroke-width="1.75" vector-effect="non-scaling-stroke"></path>
+<path d="M0,45 C20,44 40,46 60,45 C80,44 100,20 120,45 C140,46 160,44 180,45 C200,45 220,15 240,45 C260,45 280,46 300,45 C320,44 340,30 360,45 C380,46 400,45 400,45 L400,90 L0,90 Z" fill="currentColor" fill-opacity="0.08"></path>
+<line stroke="currentColor" stroke-dasharray="3 3" stroke-opacity="0.15" x1="0" x2="400" y1="45" y2="45"></line>
+</svg>
+</div>
+<!-- Micro parameters preview -->
+<div class="grid grid-cols-2 gap-2 text-label-sm font-mono">
+<div class="p-2.5 rounded bg-surface-container/40 flex justify-between border border-outline-variant/10">
+<span class="text-on-surface-variant">Stiffness</span>
+<span class="text-primary">280.0</span>
+</div>
+<div class="p-2.5 rounded bg-surface-container/40 flex justify-between border border-outline-variant/10">
+<span class="text-on-surface-variant">Damping Ratio</span>
+<span class="text-primary">0.82</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-4 text-label-sm font-mono text-on-surface-variant border-t border-outline-variant/10">
+<span class="">Módulo: GesturalPhysics.wasm</span>
+<span class="">4.1 kB memory footprint</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<!-- PROJECT 2: Nova Workspace (6 Columns) -->
+<article class="project-item lg:col-span-6 rounded-2xl bg-surface-container-low border border-outline-variant/20 overflow-hidden flex flex-col justify-between transition-all duration-300 hover:bg-surface-container/80 group" data-category="design-systems">
+<div class="p-8 space-y-6">
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high font-label-sm text-label-sm text-on-surface-variant font-mono border border-outline-variant/15">SaaS • Colaboración</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">2024</span>
+</div>
+<!-- UI Screen Preview -->
+<div class="w-full h-52 rounded-xl overflow-hidden relative bg-surface-dim border border-outline-variant/20">
+<img class="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500 opacity-90" data-alt="Monochrome minimal desktop UI mockup showing a collaborative design canvas workspace with dark charcoal theme, fine light gray grid guidelines, precision vector anchor points, floating tool palettes with glassy Apple blur aesthetic, and cleanly rendered contextual property inspector sidebars." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6wieHzvq2g1-27U-7CwnNRRmrV3Ja2xFQk1JJmT30r-JxzrPWGWJQ1AzecScRYuoqu0Qhh6rfla-ycjPgFXKfSZRRF0tgTw2b55D_gWfun1mONp_yc7UKb9GW13UF6Qb9ZFpcCh6zjjp1-Bc1TQtR-HENvDTzJxaGe1uz40e3XbZnXirsLRd1YPkfDY_S7vEmO-x2n22nqJ7MYEMNNIo9gZlRiMDhqsY0uq3AQQnd-Kwk4kGd5CKCJw">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-transparent to-transparent"></div>
+<div class="absolute bottom-3 left-3 px-3 py-1 rounded-full bg-surface-container-lowest/80 backdrop-blur-md font-label-sm text-label-sm text-primary font-mono border border-outline-variant/30">
+                  +45,000 Usuarios Activos
+                </div>
+</div>
+<div>
+<h3 class="font-headline-lg text-headline-lg text-primary font-semibold tracking-tight group-hover:text-tertiary transition-colors">
+                  Nova Workspace
+                </h3>
+<p class="font-label-sm text-label-sm text-secondary mt-1 font-mono">
+                  Lead Product Designer &amp; Architect
+                </p>
+<p class="mt-3 font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                  Plataforma de co-creación vectorial para equipos de sistemas de diseño globales. Diseñé el motor de render en HTML5 Canvas con sincronización bidireccional vía CRDTs por WebSockets.
+                </p>
+</div>
+<div class="flex flex-wrap gap-1.5 pt-2">
+<span class="px-2.5 py-1 rounded-full bg-surface-container font-label-sm text-label-sm text-secondary font-mono border border-outline-variant/15">Next.js 14</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container font-label-sm text-label-sm text-secondary font-mono border border-outline-variant/15">Tailwind CSS</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container font-label-sm text-label-sm text-secondary font-mono border border-outline-variant/15">Canvas API</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container font-label-sm text-label-sm text-secondary font-mono border border-outline-variant/15">WebRTC</span>
+</div>
+</div>
+<div class="p-6 pt-0 flex items-center justify-between border-t border-outline-variant/10">
+<a class="inline-flex items-center gap-1.5 font-label-md text-label-md text-primary font-medium hover:text-secondary transition-colors" href="#">
+<span class="">Leer Estudio de Arquitectura</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px] group-hover:translate-x-1 transition-transform">north_east</span>
+</div>
+</article>
+<!-- PROJECT 3: Chronos Design System (6 Columns) -->
+<article class="project-item lg:col-span-6 rounded-2xl bg-surface-container-low border border-outline-variant/20 overflow-hidden flex flex-col justify-between transition-all duration-300 hover:bg-surface-container/80 group" data-category="design-systems">
+<div class="p-8 space-y-6">
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high font-label-sm text-label-sm text-on-surface-variant font-mono border border-outline-variant/15">Design Systems</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">2023 — 2024</span>
+</div>
+<!-- Interactive Token Hierarchy Graphic -->
+<div class="w-full h-52 rounded-xl bg-surface-dim p-4 flex flex-col justify-between border border-outline-variant/20">
+<div class="flex items-center justify-between pb-2">
+<span class="font-mono text-label-sm text-on-surface-variant">token-dictionary.config.json</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-label-sm text-primary font-mono border border-outline-variant/20">WCAG AAA</span>
+</div>
+<!-- Mini Design Token Matrix UI visual -->
+<div class="space-y-2">
+<div class="flex items-center gap-2 p-2 rounded bg-surface-container-high/60 border border-outline-variant/10">
+<div class="w-4 h-4 rounded bg-primary"></div>
+<span class="font-mono text-label-sm text-on-surface flex-1">color.core.neutral.100</span>
+<span class="font-mono text-label-sm text-on-surface-variant">#FFFFFF</span>
+</div>
+<div class="flex items-center gap-2 p-2 rounded bg-surface-container-high/60 border border-outline-variant/10">
+<div class="w-4 h-4 rounded bg-surface-container-highest"></div>
+<span class="font-mono text-label-sm text-on-surface flex-1">elevation.surface.glass.blur</span>
+<span class="font-mono text-label-sm text-on-surface-variant">24px (180%)</span>
+</div>
+<div class="flex items-center gap-2 p-2 rounded bg-surface-container-high/60 border border-outline-variant/10">
+<div class="w-4 h-4 rounded bg-outline"></div>
+<span class="font-mono text-label-sm text-on-surface flex-1">motion.spring.tactile.bounce</span>
+<span class="font-mono text-label-sm text-on-surface-variant">cubic(0.16, 1)</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-2 text-label-sm font-mono text-on-surface-variant border-t border-outline-variant/10">
+<span class="">Figma Variables Sync</span>
+<span class="text-primary font-semibold">1,400+ Components</span>
+</div>
+</div>
+<div>
+<h3 class="font-headline-lg text-headline-lg text-primary font-semibold tracking-tight group-hover:text-tertiary transition-colors">
+                  Chronos Design System
+                </h3>
+<p class="font-label-sm text-label-sm text-secondary mt-1 font-mono">
+                  System Architect &amp; Engineering Lead
+                </p>
+<p class="mt-3 font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                  Sistema multimarca implementado en 14 aplicaciones web y nativas. Automatización completa de sincronización desde Figma Tokens hasta compilados agnósticos en CSS Modules, React y SwiftUI.
+                </p>
+</div>
+<div class="flex flex-wrap gap-1.5 pt-2">
+<span class="px-2.5 py-1 rounded-full bg-surface-container font-label-sm text-label-sm text-secondary font-mono border border-outline-variant/15">Style Dictionary</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container font-label-sm text-label-sm text-secondary font-mono border border-outline-variant/15">React 18</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container font-label-sm text-label-sm text-secondary font-mono border border-outline-variant/15">Storybook 8</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container font-label-sm text-label-sm text-secondary font-mono border border-outline-variant/15">Radix Primitives</span>
+</div>
+</div>
+<div class="p-6 pt-0 flex items-center justify-between border-t border-outline-variant/10">
+<a class="inline-flex items-center gap-1.5 font-label-md text-label-md text-primary font-medium hover:text-secondary transition-colors" href="#">
+<span class="">Explorar Arquitectura de Tokens</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px] group-hover:translate-x-1 transition-transform">north_east</span>
+</div>
+</article>
+<!-- PROJECT 4: Kura Financial (4 Columns) -->
+<article class="project-item lg:col-span-4 rounded-2xl bg-surface-container-low border border-outline-variant/20 overflow-hidden flex flex-col justify-between transition-all duration-300 hover:bg-surface-container/80 group" data-category="mobile">
+<div class="p-6 space-y-4">
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high font-label-sm text-label-sm text-on-surface-variant font-mono border border-outline-variant/15">Fintech • iOS</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">2024</span>
+</div>
+<!-- Minimalist Mobile Phone Frame Mockup -->
+<div class="w-full h-44 rounded-xl bg-surface-dim p-4 flex flex-col justify-between relative overflow-hidden border border-outline-variant/20">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-primary">account_balance_wallet</span>
+<span class="font-mono text-label-sm text-primary font-medium">Kura Vault</span>
+</div>
+<span class="font-mono text-label-sm text-on-surface-variant">Apple Pay Ready</span>
+</div>
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant block font-mono text-[11px] uppercase">Saldo Institucional</span>
+<span class="font-headline-md text-headline-md text-primary font-mono tracking-tight">$ 842,590.00</span>
+</div>
+<!-- Sparkline for financial trend -->
+<div class="w-full">
+<svg class="w-full h-8 text-secondary" fill="none" viewBox="0 0 200 30">
+<path d="M0,25 Q30,10 60,18 T120,8 T160,15 T200,4" stroke="currentColor" stroke-width="1.5"></path>
+</svg>
+</div>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-primary font-semibold tracking-tight group-hover:text-tertiary transition-colors">
+                  Kura Financial
+                </h3>
+<p class="font-label-sm text-label-sm text-secondary mt-1 font-mono">
+                  iOS Design Language &amp; Native App
+                </p>
+<p class="mt-2 font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                  Banca privada hiper-minimalista. Diseñé la experiencia nativa de transferencias biométricas bajo latencia cero con cifrado Secure Enclave.
+                </p>
+</div>
+<div class="flex flex-wrap gap-1">
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-secondary font-mono border border-outline-variant/15">SwiftUI</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-secondary font-mono border border-outline-variant/15">Metal</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-secondary font-mono border border-outline-variant/15">iOS HIG</span>
+</div>
+</div>
+<div class="p-6 pt-0 border-t border-outline-variant/10">
+<a class="inline-flex items-center gap-1 font-label-sm text-label-sm text-primary font-medium hover:text-secondary transition-colors" href="#">
+<span class="">Ver Caso Completo</span>
+<span class="material-symbols-outlined text-[14px]">north_east</span>
+</a>
+</div>
+</article>
+<!-- PROJECT 5: Hyperion Shader Engine (4 Columns) -->
+<article class="project-item lg:col-span-4 rounded-2xl bg-surface-container-low border border-outline-variant/20 overflow-hidden flex flex-col justify-between transition-all duration-300 hover:bg-surface-container/80 group" data-category="webgl opensource">
+<div class="p-6 space-y-4">
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high font-label-sm text-label-sm text-on-surface-variant font-mono border border-outline-variant/15">WebGL • Gráficos</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">2023</span>
+</div>
+<!-- WebGL Visual Representation Mockup -->
+<div class="w-full h-44 rounded-xl overflow-hidden relative bg-surface-dim border border-outline-variant/20">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-80" data-alt="Monochromatic raytraced glass orb with refraction and subtle caustics against a matte black dark background, technical grid overlaid with wireframe coordinate lines, elegant Apple aesthetic, sleek industrial studio lighting in cold white tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBe71WLLvazz10-9hrUgDxxft4q1fU8Gs-nqS9ai6pg9kVD2RJjWHboRhFR4wtCA9_vDG7CkC_TeFULgUXLwWPiVtkSTww2Cnbg_lBglD38FFhBcc3ppC1ka88sEQY4_9dMSDE9DrY00GSmOCOXJx02lgqjZsPHnzHYc_UV3qokjzAvBZVDqs42o0eMLxTV4zfDVWwmKF53j784NghzvwQuCeB1qeun0Yqq32VbHapPszJ6cSHGJaDdaQ">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-transparent to-transparent"></div>
+<div class="absolute top-3 right-3 px-2 py-0.5 rounded bg-surface-container-lowest/80 font-mono text-label-sm text-primary border border-outline-variant/30">
+                  GLSL Fragment
+                </div>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-primary font-semibold tracking-tight group-hover:text-tertiary transition-colors">
+                  Hyperion Shaders
+                </h3>
+<p class="font-label-sm text-label-sm text-secondary mt-1 font-mono">
+                  Graphics Engineer &amp; Author
+                </p>
+<p class="mt-2 font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                  Pipeline de renderizado en tiempo real para texturas táctiles, vidrio líquido y refracciones de luz aplicado a vitrinas digitales de marcas de lujo.
+                </p>
+</div>
+<div class="flex flex-wrap gap-1">
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-secondary font-mono border border-outline-variant/15">Three.js</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-secondary font-mono border border-outline-variant/15">GLSL</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-secondary font-mono border border-outline-variant/15">WebGPU</span>
+</div>
+</div>
+<div class="p-6 pt-0 border-t border-outline-variant/10">
+<a class="inline-flex items-center gap-1 font-label-sm text-label-sm text-primary font-medium hover:text-secondary transition-colors" href="#">
+<span class="">Probar Demo WebGL</span>
+<span class="material-symbols-outlined text-[14px]">north_east</span>
+</a>
+</div>
+</article>
+<!-- PROJECT 6: Minimalist Markdown Journal (4 Columns) -->
+<article class="project-item lg:col-span-4 rounded-2xl bg-surface-container-low border border-outline-variant/20 overflow-hidden flex flex-col justify-between transition-all duration-300 hover:bg-surface-container/80 group" data-category="opensource">
+<div class="p-6 space-y-4">
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high font-label-sm text-label-sm text-on-surface-variant font-mono border border-outline-variant/15">Productivity • Local</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">2023</span>
+</div>
+<!-- Typography & Markdown Preview Window -->
+<div class="w-full h-44 rounded-xl bg-surface-dim p-4 flex flex-col justify-between font-mono text-label-sm border border-outline-variant/20">
+<div class="flex items-center justify-between text-on-surface-variant text-[11px]">
+<span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-primary"></span> d_vault.aes256</span>
+<span class="">CRIPTO: ACTIVA</span>
+</div>
+<div class="p-3 rounded bg-surface-container/40 space-y-1 text-secondary border border-outline-variant/10">
+<p class="text-primary font-semibold text-[13px]"># Arquitectura Reductiva</p>
+<p class="text-[12px] leading-tight text-on-surface-variant">
+                    &gt; "Eliminar lo superfluo hasta que sólo permanezca la estructura pura..."
+                  </p>
+<p class="text-[11px] text-secondary/60 pt-1">IndexedDB sincronizado • 0 bytes externos</p>
+</div>
+<div class="flex justify-between text-on-surface-variant text-[11px]">
+<span class="">100% Offline</span>
+<span class="text-primary font-bold">PWA Certificada</span>
+</div>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-primary font-semibold tracking-tight group-hover:text-tertiary transition-colors">
+                  Journal Offline-First
+                </h3>
+<p class="font-label-sm text-label-sm text-secondary mt-1 font-mono">
+                  Solo Creator &amp; UI Designer
+                </p>
+<p class="mt-2 font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                  Entorno de escritura libre de distracciones. Cifrado AES-256 local, renderizado instantáneo tipográfico y cero recopilación de telemetría.
+                </p>
+</div>
+<div class="flex flex-wrap gap-1">
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-secondary font-mono border border-outline-variant/15">IndexedDB</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-secondary font-mono border border-outline-variant/15">Web Crypto API</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-secondary font-mono border border-outline-variant/15">PWA</span>
+</div>
+</div>
+<div class="p-6 pt-0 border-t border-outline-variant/10">
+<a class="inline-flex items-center gap-1 font-label-sm text-label-sm text-primary font-medium hover:text-secondary transition-colors" href="#">
+<span class="">Repositorio en GitHub</span>
+<span class="material-symbols-outlined text-[14px]">north_east</span>
+</a>
+</div>
+</article>
+</div>
+<!-- Editorial Philosophy Quote Section -->
+<section class="mt-24 p-8 lg:p-12 rounded-3xl bg-surface-container-low border border-outline-variant/20 relative overflow-hidden">
+<div class="relative z-10 max-w-3xl space-y-4">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest font-mono">Filosofía de Construcción</span>
+<h2 class="font-headline-xl text-headline-lg md:text-headline-xl text-primary font-medium leading-tight">
+              "El buen software es como el buen diseño industrial: honesto, riguroso en sus límites y silencioso en su presencia cotidiana."
+            </h2>
+<p class="font-body-md text-body-md text-on-surface-variant pt-2">
+              Cada línea de código y cada curva bezier en estos proyectos está concebida para resistir el paso de las modas efímeras del diseño digital.
+            </p>
+</div>
+</section>
+<!-- Bottom Connection & Cross-Navigation Bar -->
+<section class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Cross Nav 1: CV & Experience -->
+<a class="p-6 rounded-2xl bg-surface-container-low hover:bg-surface-container transition-all flex items-center justify-between group border border-outline-variant/20" href="#">
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-mono">Siguiente sección</span>
+<div class="font-headline-md text-headline-md text-primary font-medium group-hover:translate-x-0.5 transition-transform">
+                Ver Trayectoria &amp; CV Ejecutivo
+              </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">10+ años de liderazgo técnico y diseño de producto.</p>
+</div>
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors border border-outline-variant/20">
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</div>
+</a>
+<!-- Cross Nav 2: Journal & Writing -->
+<a class="p-6 rounded-2xl bg-surface-container-low hover:bg-surface-container transition-all flex items-center justify-between group border border-outline-variant/20" href="#">
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-mono">Ensayos y Notas</span>
+<div class="font-headline-md text-headline-md text-primary font-medium group-hover:translate-x-0.5 transition-transform">
+                Leer Diario Técnico &amp; Reflexiones
+              </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Artículos sobre rendimiento web, shaders y micro-interacciones.</p>
+</div>
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors border border-outline-variant/20">
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</div>
+</a>
+</section>
+<!-- Minimalist Contact Invitation Banner -->
+<div class="mt-16 p-8 rounded-2xl bg-surface-container-lowest flex flex-col sm:flex-row items-center justify-between gap-6 border border-outline-variant/20">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-primary border border-outline-variant/30">
+<span class="material-symbols-outlined text-[24px]">terminal</span>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-md text-primary font-medium">¿Tienes un proyecto de alta exigencia?</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Actualmente evaluando contratos estratégicos de arquitectura y diseño.</p>
+</div>
+</div>
+<div class="flex items-center gap-3 w-full sm:w-auto">
+<a class="w-full sm:w-auto text-center px-6 py-2.5 rounded-full bg-primary text-on-primary font-label-md text-label-md font-semibold hover:bg-primary-fixed transition-colors" href="#">
+              Iniciar Conversación
+            </a>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Floating Pill Navigation (Apple / Cupertino inspired) -->
+
+<!-- Minimalist Clean Footer -->
+<footer class="w-full bg-surface-container-lowest/80 py-12 relative z-10 border-t border-outline-variant/15">
+<div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant">
+<div class="flex items-center gap-space-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-on-surface-variant"></span>
+<span class="font-body-sm text-body-sm">Diseñado con precisión e intención en Cupertino &amp; Zurich</span>
+</div>
+<div class="font-body-sm text-body-sm">
+        © 2025 Todos los derechos reservados. Edición Dossier.
+      </div>
+</div>
+</footer>
+<!-- Interactivity Scripts: Pure vanilla, zero runtime exceptions -->
+<script>
+    (function () {
+      const filterButtons = document.querySelectorAll('.filter-tab');
+      const projectItems = document.querySelectorAll('.project-item');
+      const gridBtn = document.getElementById('view-grid-btn');
+      const listBtn = document.getElementById('view-list-btn');
+
+      // Filter tabs functionality
+      filterButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const filter = btn.getAttribute('data-filter');
+
+          filterButtons.forEach(b => {
+            b.classList.remove('bg-primary', 'text-on-primary');
+            b.classList.add('text-on-surface-variant');
+          });
+          btn.classList.add('bg-primary', 'text-on-primary');
+          btn.classList.remove('text-on-surface-variant');
+
+          projectItems.forEach(item => {
+            const categories = item.getAttribute('data-category') || '';
+            if (filter === 'all' || categories.includes(filter)) {
+              item.style.display = '';
+            } else {
+              item.style.display = 'none';
+            }
+          });
+        });
+      });
+
+      // View switching logic (Grid vs Editorial Single Column List)
+      if (gridBtn && listBtn) {
+        listBtn.addEventListener('click', () => {
+          listBtn.classList.add('bg-surface-container-high', 'text-primary');
+          listBtn.classList.remove('text-on-surface-variant');
+          gridBtn.classList.remove('bg-surface-container-high', 'text-primary');
+          gridBtn.classList.add('text-on-surface-variant');
+
+          projectItems.forEach(item => {
+            item.classList.remove('lg:col-span-4', 'lg:col-span-6');
+            item.classList.add('lg:col-span-12');
+          });
+        });
+
+        gridBtn.addEventListener('click', () => {
+          gridBtn.classList.add('bg-surface-container-high', 'text-primary');
+          gridBtn.classList.remove('text-on-surface-variant');
+          listBtn.classList.remove('bg-surface-container-high', 'text-primary');
+          listBtn.classList.add('text-on-surface-variant');
+
+          projectItems.forEach((item, index) => {
+            item.classList.remove('lg:col-span-12');
+            if (index === 0) {
+              item.classList.add('lg:col-span-12');
+            } else if (index === 1 || index === 2) {
+              item.classList.add('lg:col-span-6');
+            } else {
+              item.classList.add('lg:col-span-4');
+            }
+          });
+        });
+      }
+    })();
+  </script>
+
+
+</body></html>

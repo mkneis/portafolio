@@ -1,0 +1,724 @@
+<!DOCTYPE html><html class="dark" lang="es" style="min-height: 100vh; height: auto !important; overflow-y: auto !important;"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta content="web_standard" name="shell-type">
+<title>Proyectos Seleccionados — Portfolio</title>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<style>
+    @layer base {
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        overscroll-behavior: auto;
+      }
+    }
+  </style>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-container-low": "#1b1b1d",
+            "surface-dim": "#131315",
+            "tertiary-fixed": "#e7e1dd",
+            "surface-bright": "#39393b",
+            "surface-container-highest": "#353437",
+            "on-secondary-container": "#b4b4bd",
+            "on-tertiary-fixed": "#1d1b19",
+            "surface-container-high": "#2a2a2c",
+            "inverse-on-surface": "#303032",
+            "on-error-container": "#ffdad6",
+            "on-primary": "#2f3131",
+            "on-primary-fixed-variant": "#454747",
+            "primary-fixed": "#e2e2e2",
+            "primary-fixed-dim": "#c6c6c7",
+            "on-background": "#e5e1e4",
+            "error": "#ffb4ab",
+            "background": "#131315",
+            "outline-variant": "#444748",
+            "error-container": "#93000a",
+            "surface-container-lowest": "#0e0e10",
+            "on-primary-container": "#636565",
+            "tertiary": "#ffffff",
+            "tertiary-fixed-dim": "#cbc6c1",
+            "outline": "#8e9192",
+            "on-error": "#690005",
+            "on-surface-variant": "#c4c7c8",
+            "surface-variant": "#353437",
+            "surface-container": "#201f21",
+            "on-secondary-fixed": "#1a1b22",
+            "on-primary-fixed": "#1a1c1c",
+            "inverse-primary": "#5d5f5f",
+            "primary": "#ffffff",
+            "secondary": "#c6c6cf",
+            "primary-container": "#e2e2e2",
+            "secondary-fixed-dim": "#c6c6cf",
+            "on-secondary": "#2f3037",
+            "inverse-surface": "#e5e1e4",
+            "on-surface": "#e5e1e4",
+            "tertiary-container": "#e7e1dd",
+            "secondary-container": "#45464e",
+            "surface": "#131315",
+            "on-tertiary": "#32302d",
+            "surface-tint": "#c6c6c7",
+            "on-secondary-fixed-variant": "#45464e",
+            "secondary-fixed": "#e2e1eb",
+            "on-tertiary-fixed-variant": "#494643",
+            "on-tertiary-container": "#676460"
+          },
+          borderRadius: {
+            DEFAULT: "0.25rem",
+            lg: "0.5rem",
+            xl: "0.75rem",
+            full: "9999px"
+          },
+          spacing: {
+            "space-lg": "1.5rem",
+            "space-sm": "0.5rem",
+            "space-xs": "0.25rem",
+            "gutter-sm": "1rem",
+            "space-md": "0.875rem",
+            margin: "3rem",
+            "margin-sm": "1.25rem",
+            "space-xl": "2.5rem",
+            gutter: "1.5rem"
+          },
+          fontFamily: {
+            "label-md": ["Inter", "sans-serif"],
+            "headline-lg": ["Inter", "sans-serif"],
+            "label-sm": ["Inter", "sans-serif"],
+            "headline-md": ["Inter", "sans-serif"],
+            "body-lg": ["Inter", "sans-serif"],
+            "body-md": ["Inter", "sans-serif"],
+            "body-sm": ["Inter", "sans-serif"],
+            "headline-xl": ["Inter", "sans-serif"],
+            "display-lg-mobile": ["Inter", "sans-serif"],
+            "display-lg": ["Inter", "sans-serif"]
+          },
+          fontSize: {
+            "label-md": ["13px", { lineHeight: "16px", letterSpacing: "0.01em", fontWeight: "500" }],
+            "headline-lg": ["24px", { lineHeight: "32px", letterSpacing: "-0.02em", fontWeight: "500" }],
+            "label-sm": ["11px", { lineHeight: "14px", letterSpacing: "0.04em", fontWeight: "600" }],
+            "headline-md": ["20px", { lineHeight: "28px", letterSpacing: "-0.015em", fontWeight: "500" }],
+            "body-lg": ["17px", { lineHeight: "26px", letterSpacing: "-0.01em", fontWeight: "400" }],
+            "body-md": ["15px", { lineHeight: "24px", letterSpacing: "-0.005em", fontWeight: "400" }],
+            "body-sm": ["13px", { lineHeight: "18px", letterSpacing: "0em", fontWeight: "400" }],
+            "headline-xl": ["32px", { lineHeight: "40px", letterSpacing: "-0.025em", fontWeight: "600" }],
+            "display-lg-mobile": ["36px", { lineHeight: "44px", letterSpacing: "-0.025em", fontWeight: "600" }],
+            "display-lg": ["56px", { lineHeight: "64px", letterSpacing: "-0.035em", fontWeight: "600" }]
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-background font-body-md text-on-surface antialiased selection:bg-surface-bright selection:text-primary relative min-h-screen" style="min-height: 100vh; height: auto !important; overflow-y: auto !important;">
+<!-- Fixed Top Header -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-surface/80 backdrop-blur-2xl border-b border-outline-variant/15">
+<div class="h-16 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between">
+<!-- Left: Logo & Availability Badge -->
+<div class="flex items-center gap-space-md">
+<a class="flex items-center justify-center w-8 h-8 rounded-lg bg-surface-container-high text-primary font-headline-md text-headline-md tracking-tight select-none border border-outline-variant/20 hover:border-outline-variant/40 transition-colors" href="#">
+          M
+        </a>
+<div class="flex items-center gap-2 pl-space-xs">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider hidden sm:inline">Disponible para proyectos</span>
+</div>
+</div>
+<!-- Right: Links, Dark Mode, Profile -->
+<div class="hidden md:flex items-center justify-center"><div class="bg-surface-container-low/90 backdrop-blur-2xl rounded-full p-1 border border-outline-variant/30 shadow-sm"><nav class="flex items-center gap-1"><a class="flex items-center px-4 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all duration-200" href="#">Presentación &amp; CV</a><a class="flex items-center px-4 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all duration-200" href="#">Proyectos</a><a class="flex items-center px-4 py-1.5 rounded-full font-label-md text-label-md bg-primary text-on-primary font-semibold transition-all duration-200" href="#">Diario / Blog</a><a class="flex items-center px-4 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all duration-200" href="#">Contacto</a></nav></div></div><div class="flex items-center gap-4 sm:gap-space-lg">
+<div class="flex items-center gap-2 sm:gap-space-md text-on-surface-variant">
+<a aria-label="Code Repository" class="flex items-center justify-center w-8 h-8 rounded-full bg-surface-container/60 hover:bg-surface-container-high hover:text-on-surface transition-all border border-outline-variant/10" href="#">
+<span class="material-symbols-outlined text-[18px]">code</span>
+</a>
+<a aria-label="Global Network" class="flex items-center justify-center w-8 h-8 rounded-full bg-surface-container/60 hover:bg-surface-container-high hover:text-on-surface transition-all border border-outline-variant/10" href="#">
+<span class="material-symbols-outlined text-[18px]">public</span>
+</a>
+<a aria-label="Terminal" class="flex items-center justify-center w-8 h-8 rounded-full bg-surface-container/60 hover:bg-surface-container-high hover:text-on-surface transition-all border border-outline-variant/10" href="#">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+</a>
+<a aria-label="Email Communication" class="flex items-center justify-center w-8 h-8 rounded-full bg-surface-container/60 hover:bg-surface-container-high hover:text-on-surface transition-all border border-outline-variant/10" href="#">
+<span class="material-symbols-outlined text-[18px]">mail</span>
+</a>
+</div>
+<div class="w-12 h-6 rounded-full bg-surface-container p-0.5 flex items-center justify-end cursor-pointer border border-outline-variant/20">
+<div class="w-5 h-5 rounded-full bg-primary flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-surface text-[12px]">dark_mode</span>
+</div>
+</div>
+<div class="pl-1">
+<img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-outline-variant/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1UFjvGj5CEqMEbUTTJWCBuevvScCaTDnjI9mXFJXGKIFNjy-sWDwVISSRo1p5pmzNsenqaiTSdcz4uTVjnLdxhqtPgzyX48Iht8jFQw9AZ802lwFjsCQtdyH2Il_P9neZ50OAjlend27vfbKM6fiVGEUcng4KDdDCx7acQ3J6spOs4oA32BLAAAN4YcvEEgVUtJCbwOwAq1USSB2o9SxdCk6D4qTr9IEXXuGDcYj-tcvIfalBctTVtA">
+</div>
+</div>
+</div>
+</header>
+<!-- Main Content Viewport -->
+<main class="w-full pt-16 pb-32 bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- Top Reading Navigation & Ambient Meta Bar -->
+<section class="w-full max-w-7xl mx-auto px-6 lg:px-12 pt-8 pb-4">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4 py-3 bg-surface-container-low/70 backdrop-blur-xl rounded-2xl px-5 shadow-sm">
+<div class="flex items-center gap-3">
+<a class="inline-flex items-center gap-1.5 font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-[16px]">arrow_back</span>
+<span class="">Volver al Diario Técnico</span>
+</a>
+<span class="text-outline-variant/60 font-body-sm text-body-sm">/</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Rendimiento &amp; UI</span>
+<span class="text-outline-variant/60 font-body-sm text-body-sm hidden sm:inline">/</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline px-2 py-0.5 rounded-full bg-surface-container hidden sm:inline">ID: #ART-042</span>
+</div>
+<!-- Reading Controls Widget -->
+<div class="flex items-center gap-2 self-end md:self-auto">
+<div class="flex items-center bg-surface-container rounded-full p-1 shadow-inner">
+<button aria-label="Reducir fuente" class="w-7 h-7 flex items-center justify-center rounded-full text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-all text-xs font-semibold" id="font-decrease-btn">
+            A-
+          </button>
+<button aria-label="Aumentar fuente" class="w-7 h-7 flex items-center justify-center rounded-full text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-all text-sm font-semibold" id="font-increase-btn">
+            A+
+          </button>
+</div>
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-primary font-label-md text-label-md transition-all shadow-sm" id="copy-link-btn">
+<span class="material-symbols-outlined text-[15px]">link</span>
+<span class="hidden sm:inline" id="copy-btn-text">Copiar enlace</span>
+</button>
+<button aria-label="Guardar en marcadores" class="w-8 h-8 flex items-center justify-center rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-primary transition-all shadow-sm" id="bookmark-btn">
+<span class="material-symbols-outlined text-[16px]" id="bookmark-icon">bookmark_border</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Editorial Hero & Technical Typography Header -->
+<header class="w-full max-w-4xl mx-auto px-6 lg:px-8 pt-10 pb-12">
+<!-- Meta and Tag Badges -->
+<div class="flex flex-wrap items-center gap-2 mb-6">
+<span class="px-3 py-1 rounded-full bg-surface-container-high font-label-sm text-label-sm text-primary uppercase tracking-wider">TIL</span>
+<span class="px-3 py-1 rounded-full bg-surface-container-low font-label-sm text-label-sm text-on-surface-variant tracking-wide">Física de Resortes</span>
+<span class="px-3 py-1 rounded-full bg-surface-container-low font-label-sm text-label-sm text-on-surface-variant tracking-wide">OffscreenCanvas</span>
+<span class="px-3 py-1 rounded-full bg-surface-container-low font-label-sm text-label-sm text-on-surface-variant tracking-wide">Rendimiento Web</span>
+<span class="px-3 py-1 rounded-full bg-surface-container-low font-label-sm text-label-sm text-on-surface-variant tracking-wide">TypeScript</span>
+</div>
+<!-- Article Main Title -->
+<h1 class="font-display-lg text-headline-xl md:text-display-lg text-primary leading-tight tracking-tight mb-6">
+      La ilusión de la inmediatez: Física de resortes y desacoplamiento de renderizado a 120 FPS en la web moderna
+    </h1>
+<!-- Subtitle / Editorial Lead -->
+<p class="font-body-lg text-body-lg text-secondary leading-relaxed mb-8">
+      Un análisis arquitectónico sobre cómo mitigar el stuttering del hilo principal desacoplando el cálculo cinemático mediante <code class="px-2 py-0.5 rounded bg-surface-container text-primary font-mono text-sm">OffscreenCanvas</code> y memoria compartida (<code class="px-2 py-0.5 rounded bg-surface-container text-primary font-mono text-sm">SharedArrayBuffer</code>).
+    </p>
+<!-- Publication Meta Strip & Read Time -->
+<div class="flex flex-wrap items-center justify-between gap-4 pt-6 pb-2 text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-center gap-3">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[15px]">calendar_today</span>
+          18 de Febrero, 2025
+        </span>
+<span class="">•</span>
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[15px]">schedule</span>
+          8 min de lectura
+        </span>
+<span class="">•</span>
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[15px]">visibility</span>
+          1.4k vistas
+        </span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary/70"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Dossier Técnico Especializado</span>
+</div>
+</div>
+</header>
+<!-- Editorial Hero Visual Element -->
+<section class="w-full max-w-5xl mx-auto px-6 mb-16">
+<div class="relative w-full rounded-2xl overflow-hidden shadow-2xl bg-surface-container-lowest">
+<div class="w-full h-80 sm:h-96 bg-cover bg-center" data-alt="Minimalist dark mode studio shot of precision engineering instruments, mathematical kinematic dials, clean translucent glass curves, oscillating waveforms and fluid movement graphics in monochromatic tones with Apple Zurich aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCsZkpqQOsIR1kL15DMrPQk7VFZ8C6XVKLK3Ph1ezna_PvIjPv9H5KH8OprzYewIUBcnN5D2s9DbVdAU_gKZ9AFy8tZM-_mhh2xOB4_2FVSTLwJGDCRxzBFKy4H_g4efNSR5MhLZSZzuGFcR4P6puR_z-Ce_GVOyFlCETa6a4MnCT28NtG9f--rw9ZJ0uhSdJUlkdiRGij6RuYb_6tGY1jTeGEhCLX0yYApt6Cu2s62MR7BexX_-pIg-w')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-surface-container-lowest/40 to-transparent"></div>
+<div class="absolute bottom-6 left-6 right-6 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="tracking-widest uppercase">Fig. 01 — Oscilador armónico amortiguado en 120Hz</span>
+<span class="bg-surface-container-lowest/80 backdrop-blur-md px-3 py-1 rounded-full text-outline-variant">Offscreen Thread Worker Engine</span>
+</div>
+</div>
+</section>
+<!-- Main Article Body Content Column -->
+<article class="w-full max-w-3xl mx-auto px-6 lg:px-8 space-y-14 transition-all duration-300" id="article-body">
+<!-- 1. Executive Summary Callout -->
+<div class="relative p-6 sm:p-8 rounded-2xl bg-surface-container-low/90 backdrop-blur-md shadow-sm">
+<div class="absolute left-0 top-6 bottom-6 w-1 rounded-r-full bg-primary"></div>
+<div class="flex items-center gap-2 mb-3">
+<span class="material-symbols-outlined text-primary text-[18px]">terminal</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-semibold">Resumen Ejecutivo</span>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface leading-relaxed italic">
+        “Las interfaces táctiles en navegadores modernos frecuentemente fallan no por limitaciones de GPU, sino por contención de ciclo de reloj en el <strong class="text-primary font-semibold">Main Thread</strong> durante eventos de puntero. Exploramos cómo delegar el solucionador de ecuaciones diferenciales a un worker en segundo plano para garantizar inercia física sin caídas de cuadro.”
+      </p>
+</div>
+<!-- 2. Section 01: El dilema del fotograma y la cadencia táctil -->
+<section class="space-y-6">
+<div class="flex items-baseline gap-3">
+<span class="font-label-sm text-label-sm font-mono text-outline tracking-wider">01 //</span>
+<h2 class="font-headline-xl text-headline-xl text-primary tracking-tight">El dilema del fotograma y la cadencia táctil</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+        El ojo humano entrenado y la respuesta neuromuscular operan bajo una expectativa táctil estricta: cuando el pulgar se desliza sobre una pantalla con tasa de refresco adaptativa ProMotion (120Hz), cualquier desfase temporal superior a los 8.33 milisegundos se interpreta instantáneamente como pesadez mecánica o fricción artificial.
+      </p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+        En las aplicaciones web tradicionales, el bucle <code class="text-primary font-mono text-sm px-1.5 py-0.5 rounded bg-surface-container">requestAnimationFrame</code> compite directamente contra la hidratación de componentes, deserialización de payloads JSON y cálculos de layout. Cuando se suscita un recolector de basura (GC Pause), el hilo colapsa momentáneamente, precipitando el fotograma a 33.3ms — una caída de 120 FPS a 30 FPS perceptible en milisegundos críticos.
+      </p>
+<!-- Minimalist SVG Benchmarking Graphic & Telemetry Card -->
+<div class="my-8 p-6 rounded-2xl bg-surface-container-low shadow-sm space-y-6">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+<div>
+<h3 class="font-headline-md text-headline-md text-primary tracking-tight">Pipeline Tradicional vs. Arquitectura Desacoplada</h3>
+<p class="font-body-sm text-body-sm text-outline">Latencia y variabilidad de frame budget a 120Hz</p>
+</div>
+<span class="self-start sm:self-auto px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface font-mono font-label-sm text-label-sm">Sample: 240 frames</span>
+</div>
+<!-- Inline Latency Comparison Chart SVG -->
+<div class="w-full bg-surface-container-lowest p-4 rounded-xl">
+<svg class="w-full h-44 text-on-surface-variant" fill="none" viewBox="0 0 600 160" xmlns="http://www.w3.org/2000/svg">
+<!-- Grid Lines -->
+<line stroke="currentColor" stroke-dasharray="4 4" stroke-opacity="0.1" x1="40" x2="580" y1="20" y2="20"></line>
+<text class="text-[10px] font-mono" fill="currentColor" opacity="0.5" text-anchor="end" x="35" y="24">32ms</text>
+<line stroke="currentColor" stroke-dasharray="4 4" stroke-opacity="0.1" x1="40" x2="580" y1="65" y2="65"></line>
+<text class="text-[10px] font-mono" fill="currentColor" opacity="0.5" text-anchor="end" x="35" y="69">16ms</text>
+<line stroke="#ffffff" stroke-opacity="0.25" x1="40" x2="580" y1="110" y2="110"></line>
+<text class="text-[10px] font-mono" fill="#ffffff" opacity="0.8" text-anchor="end" x="35" y="114">8.3ms</text>
+<!-- Traditional Thread Path (Red/Volatile Jitter) -->
+<path d="M 50 70 L 80 65 L 110 68 L 140 24 L 170 30 L 200 68 L 230 72 L 260 22 L 290 28 L 320 66 L 350 70 L 380 25 L 410 70 L 440 68 L 470 26 L 500 72 L 530 65 L 560 69" fill="none" stroke="#ffb4ab" stroke-linecap="round" stroke-width="2"></path>
+<!-- Decoupled Worker Path (Clean Monochromatic Solid 8.3ms line) -->
+<path d="M 50 110 L 100 110 L 150 109 L 200 110 L 250 111 L 300 110 L 350 109 L 400 110 L 450 110 L 500 110 L 550 110 L 570 110" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-width="2.5"></path>
+<!-- Indicator Dots on Decoupled -->
+<circle cx="250" cy="111" fill="#ffffff" r="3"></circle>
+<circle cx="450" cy="110" fill="#ffffff" r="3"></circle>
+</svg>
+<!-- Legend Bar -->
+<div class="flex flex-wrap items-center justify-between gap-4 mt-3 pt-3 text-body-sm font-body-sm">
+<div class="flex items-center gap-2">
+<span class="w-3 h-0.5 bg-error rounded"></span>
+<span class="text-error font-mono text-xs">Main Thread Monolítico (Jitter variable 16.6ms — 32.4ms)</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3 h-0.5 bg-primary rounded"></span>
+<span class="text-primary font-mono text-xs font-semibold">Worker Kinematics (8.3ms continuo / 120Hz)</span>
+</div>
+</div>
+</div>
+<!-- Comparative Metrics Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+<div class="p-4 rounded-xl bg-surface-container">
+<div class="text-outline font-label-sm text-label-sm uppercase tracking-wider mb-1">Jitter Main Thread</div>
+<div class="text-primary font-headline-lg text-headline-lg tracking-tight">16.6ms <span class="text-error text-body-sm">± 15.8ms caída</span></div>
+<p class="text-on-surface-variant font-body-sm text-body-sm mt-1">Saturación por microtareas y reconciliaciones DOM periódicas.</p>
+</div>
+<div class="p-4 rounded-xl bg-surface-container">
+<div class="text-outline font-label-sm text-label-sm uppercase tracking-wider mb-1">Cadencia Offscreen Desacoplada</div>
+<div class="text-primary font-headline-lg text-headline-lg tracking-tight">8.33ms <span class="text-secondary text-body-sm">± 0.08ms</span></div>
+<p class="text-on-surface-variant font-body-sm text-body-sm mt-1">Preservación del presupuesto cinemático sin interferencia reactiva.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. Section 02: Modelado matemático de amortiguamiento crítico -->
+<section class="space-y-6">
+<div class="flex items-baseline gap-3">
+<span class="font-label-sm text-label-sm font-mono text-outline tracking-wider">02 //</span>
+<h2 class="font-headline-xl text-headline-xl text-primary tracking-tight">Modelado matemático de amortiguamiento crítico</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+        A diferencia de las curvas cúbicas bézier predefinidas (<code class="text-primary font-mono text-sm px-1.5 py-0.5 rounded bg-surface-container">cubic-bezier()</code>), los sistemas físicos basados en resortes retienen el momento y la inercia vectorial del usuario al soltar el puntero. La ecuación diferencial lineal de segundo orden de Hooke-Stokes describe el comportamiento cinemático:
+      </p>
+<!-- Math Formula Display Block -->
+<div class="p-5 rounded-xl bg-surface-container-low text-center shadow-sm">
+<div class="font-mono text-lg sm:text-xl text-primary tracking-wider py-2">
+          m · x’’(t) + c · x’(t) + k · x(t) = 0
+        </div>
+<p class="font-label-sm text-label-sm text-outline mt-2">
+          Donde <strong class="text-on-surface">m</strong> es la masa inercial, <strong class="text-on-surface">c</strong> el coeficiente de disipación viscoplástica y <strong class="text-on-surface">k</strong> la rigidez elástica (tension).
+        </p>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+        Para resolver la ecuación en tiempo real dentro del ciclo de vida del navegador, delegamos el solver numérico Runge-Kutta de 4to orden (RK4) a un <code class="text-primary font-mono text-sm px-1.5 py-0.5 rounded bg-surface-container">Web Worker</code> dedicado, el cual posee la transferencia exclusiva de un lienzo de visualización vía <code class="text-primary font-mono text-sm px-1.5 py-0.5 rounded bg-surface-container">canvas.transferControlToOffscreen()</code>.
+      </p>
+<!-- TypeScript Code Snippet Box -->
+<div class="rounded-2xl bg-surface-container-lowest overflow-hidden shadow-xl">
+<!-- Snippet Header -->
+<div class="flex items-center justify-between px-5 py-3.5 bg-surface-container-high/60">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-outline-variant"></span>
+<span class="font-mono text-xs text-primary font-medium tracking-tight">spring-solver.worker.ts</span>
+<span class="text-outline-variant font-mono text-xs">— TypeScript / OffscreenCanvas</span>
+</div>
+<button class="flex items-center gap-1 text-xs font-mono text-on-surface-variant hover:text-primary transition-colors py-1 px-2.5 rounded-lg hover:bg-surface-container" id="copy-code-btn">
+<span class="material-symbols-outlined text-[14px]">content_copy</span>
+<span id="copy-code-status" class="">Copiar snippet</span>
+</button>
+</div>
+<!-- Code Area -->
+<pre class="p-5 font-mono text-xs sm:text-sm text-on-surface overflow-x-auto leading-relaxed"><code id="code-content"><span class="text-secondary font-semibold">interface</span> SpringConfig {
+  stiffness: <span class="text-primary-fixed-dim">number</span>;   <span class="text-outline">// k: constante elástica (ej. 170)</span>
+  damping: <span class="text-primary-fixed-dim">number</span>;     <span class="text-outline">// c: coeficiente amortiguador (ej. 26)</span>
+  mass: <span class="text-primary-fixed-dim">number</span>;        <span class="text-outline">// m: masa del elemento (ej. 1.0)</span>
+}
+
+<span class="text-secondary font-semibold">export class</span> OffscreenSpringIntegrator {
+  <span class="text-secondary font-semibold">private</span> ctx: OffscreenCanvasRenderingContext2D;
+  <span class="text-secondary font-semibold">private</span> pos = 0;
+  <span class="text-secondary font-semibold">private</span> vel = 0;
+  <span class="text-secondary font-semibold">private</span> target = 0;
+
+  <span class="text-secondary font-semibold">constructor</span>(canvas: OffscreenCanvas, <span class="text-secondary font-semibold">private</span> cfg: SpringConfig) {
+    <span class="text-secondary font-semibold">this</span>.ctx = canvas.getContext(<span class="text-primary-fixed">'2d'</span>)!;
+  }
+
+  <span class="text-secondary font-semibold">public</span> update(dt: <span class="text-primary-fixed-dim">number</span>): <span class="text-primary-fixed-dim">void</span> {
+    <span class="text-outline">// Integración semi-implícita Euler-Verlet a 120 FPS</span>
+    <span class="text-secondary font-semibold">const</span> force = -<span class="text-secondary font-semibold">this</span>.cfg.stiffness * (<span class="text-secondary font-semibold">this</span>.pos - <span class="text-secondary font-semibold">this</span>.target);
+    <span class="text-secondary font-semibold">const</span> dampingForce = -<span class="text-secondary font-semibold">this</span>.cfg.damping * <span class="text-secondary font-semibold">this</span>.vel;
+    <span class="text-secondary font-semibold">const</span> accel = (force + dampingForce) / <span class="text-secondary font-semibold">this</span>.cfg.mass;
+
+    <span class="text-secondary font-semibold">this</span>.vel += accel * dt;
+    <span class="text-secondary font-semibold">this</span>.pos += <span class="text-secondary font-semibold">this</span>.vel * dt;
+
+    <span class="text-secondary font-semibold">this</span>.render();
+  }
+
+  <span class="text-secondary font-semibold">private</span> render(): <span class="text-primary-fixed-dim">void</span> {
+    <span class="text-secondary font-semibold">this</span>.ctx.clearRect(0, 0, 800, 600);
+    <span class="text-secondary font-semibold">this</span>.ctx.translate(<span class="text-secondary font-semibold">this</span>.pos, 0);
+    <span class="text-outline">// Blit directo sin roundtrips con el Main Thread</span>
+  }
+}</code></pre>
+</div>
+</section>
+<!-- 4. Section 03: Pruebas de campo y resultados en producción -->
+<section class="space-y-6">
+<div class="flex items-baseline gap-3">
+<span class="font-label-sm text-label-sm font-mono text-outline tracking-wider">03 //</span>
+<h2 class="font-headline-xl text-headline-xl text-primary tracking-tight">Pruebas de campo y resultados en producción</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+        Durante las fases de despliegue en clientes de banca privada y suites de diseño paramétrico, instrumentamos la API <code class="text-primary font-mono text-sm px-1.5 py-0.5 rounded bg-surface-container">PerformanceObserver</code> en Safari iPadOS y Google Chrome desktop bajo cargas sintéticas pesadas de JavaScript.
+      </p>
+<!-- Engineering Quote Banner -->
+<blockquote class="my-6 p-8 rounded-2xl bg-surface-container-high/40 shadow-sm relative overflow-hidden">
+<div class="text-primary font-headline-lg text-headline-lg leading-snug tracking-tight font-serif italic mb-4">
+          “Al separar la física de la reconciliación DOM, la interacción se siente indistinguible de una hoja de papel física en un iPad Pro.”
+        </div>
+<div class="flex items-center gap-3">
+<div class="w-7 h-7 rounded-full bg-surface-container-highest flex items-center justify-center font-mono text-xs text-primary font-semibold">
+            MV
+          </div>
+<div>
+<div class="font-label-md text-label-md text-primary font-medium">Mateo Valls</div>
+<div class="font-body-sm text-body-sm text-outline">Lead Systems &amp; Performance Architect</div>
+</div>
+</div>
+</blockquote>
+<!-- Two Highlight Metrics Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+<div class="p-6 rounded-2xl bg-surface-container-low flex flex-col justify-between shadow-sm">
+<div class="flex items-center justify-between mb-4">
+<span class="material-symbols-outlined text-primary text-[22px]">timer_off</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container text-primary uppercase">Zero Blocking</span>
+</div>
+<div>
+<div class="font-display-lg text-display-lg-mobile text-primary font-semibold tracking-tight">0 ms</div>
+<div class="font-headline-md text-headline-md text-on-surface mt-1">Main Thread Block</div>
+<p class="font-body-sm text-body-sm text-outline mt-2">
+              Ausencia total de tareas largas (&gt;50ms) en DevTools durante gestos rápidos de arrastre o lanzamiento inercial.
+            </p>
+</div>
+</div>
+<div class="p-6 rounded-2xl bg-surface-container-low flex flex-col justify-between shadow-sm">
+<div class="flex items-center justify-between mb-4">
+<span class="material-symbols-outlined text-primary text-[22px]">speed</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container text-primary uppercase">ProMotion Lock</span>
+</div>
+<div>
+<div class="font-display-lg text-display-lg-mobile text-primary font-semibold tracking-tight">120 FPS</div>
+<div class="font-headline-md text-headline-md text-on-surface mt-1">Estables en ProMotion</div>
+<p class="font-body-sm text-body-sm text-outline mt-2">
+              Sincronización estricta con el V-Sync de pantallas de alta frecuencia sin caídas durante recalculos de estilo.
+            </p>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. Footnotes & Academic References -->
+<section class="pt-8 pb-4 space-y-4">
+<div class="flex items-center gap-2 text-outline">
+<span class="material-symbols-outlined text-[18px]">menu_book</span>
+<h4 class="font-label-sm text-label-sm uppercase tracking-widest font-semibold">Notas al pie y Referencias Académicas</h4>
+</div>
+<ol class="space-y-3 font-body-sm text-body-sm text-outline-variant">
+<li class="flex items-start gap-2">
+<span class="font-mono text-outline">[1]</span>
+<span class="">Apple Inc. (2024). <em>Designing Fluid Gestural Interfaces</em>. Apple Human Interface Guidelines &amp; WWDC Sessions on Kinetic Responsiveness.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="font-mono text-outline">[2]</span>
+<span class="">W3C Web Performance Working Group (2023). <em>OffscreenCanvas and Dedicated Worker Transfer Specification</em>. W3C Recommendation Candidate.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="font-mono text-outline">[3]</span>
+<span class="">Runge, C. &amp; Kutta, M. (1901). <em>Über die numerische Auflösung von Differentialgleichungen</em>. Zeitschrift für Mathematik und Physik, 46: 435–453.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="font-mono text-outline">[4]</span>
+<span class="">React Native Architecture Workgroup (2024). <em>Fabric Engine: Concurrent Rendering and Off-Thread Mount Sequences</em>. Meta Open Source Research.</span>
+</li>
+</ol>
+</section>
+</article>
+<!-- Article Post-Reading Action & Newsletter Bar -->
+<section class="w-full max-w-4xl mx-auto px-6 lg:px-8 mt-16 pt-10">
+<!-- Social Share Strip -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-4 py-4 px-6 rounded-2xl bg-surface-container-low shadow-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-outline text-[18px]">share</span>
+<span class="font-label-md text-label-md text-on-surface">Compartir esta investigación:</span>
+</div>
+<div class="flex items-center gap-3">
+<button class="px-3.5 py-1.5 rounded-full bg-surface-container text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors font-label-sm text-label-sm">
+          X / Twitter
+        </button>
+<button class="px-3.5 py-1.5 rounded-full bg-surface-container text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors font-label-sm text-label-sm">
+          LinkedIn
+        </button>
+<button class="px-3.5 py-1.5 rounded-full bg-surface-container text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors font-label-sm text-label-sm">
+          GitHub Discuss
+        </button>
+</div>
+</div>
+<!-- Minimalist Newsletter Box ("Síntesis Dominical") -->
+<div class="mt-8 p-8 rounded-2xl bg-surface-container-low/80 backdrop-blur-xl shadow-lg relative overflow-hidden">
+<div class="max-w-xl">
+<div class="flex items-center gap-2 mb-2">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-semibold">Boletín Técnico</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-primary tracking-tight">Síntesis Dominical de Sistemas &amp; Arquitectura</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 leading-relaxed">
+          Un correo electrónico conciso cada domingo con notas breves de laboratorio, análisis de rendimiento en bajo nivel y diseño de interfaces críticas. Cero ruido comercial.
+        </p>
+<form class="mt-6 flex flex-col sm:flex-row gap-2.5" onsubmit="event.preventDefault(); document.getElementById('newsletter-status').classList.remove('hidden');">
+<input class="flex-1 px-4 py-2.5 rounded-xl bg-surface-container-lowest text-primary placeholder-outline font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-primary shadow-inner" placeholder="mateo@ejemplo.ch" required="" type="email">
+<button class="px-5 py-2.5 rounded-xl bg-primary text-on-primary font-label-md text-label-md font-semibold hover:bg-secondary-fixed transition-colors shadow-sm" type="submit">
+            Suscribirme al Dossier
+          </button>
+</form>
+<div class="hidden mt-3 font-label-sm text-label-sm text-primary flex items-center gap-1.5" id="newsletter-status">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span class="">Suscripción registrada. Recibirás la síntesis el próximo domingo a las 08:00 CET.</span>
+</div>
+</div>
+</div>
+<!-- Navigation Between Posts -->
+<nav class="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-4">
+<!-- Previous Post -->
+<a class="group p-5 rounded-2xl bg-surface-container-low hover:bg-surface-container transition-all shadow-sm flex flex-col justify-between" href="#">
+<div class="flex items-center gap-1.5 text-outline font-label-sm text-label-sm uppercase tracking-wider mb-2">
+<span class="material-symbols-outlined text-[14px]">arrow_back</span>
+<span class="">Publicación Anterior</span>
+</div>
+<div class="text-on-surface group-hover:text-primary font-headline-md text-headline-md tracking-tight transition-colors line-clamp-2">
+          OffscreenCanvas y Web Workers sin fricción estructural en microfrontends
+        </div>
+<div class="font-body-sm text-body-sm text-outline-variant mt-3">02 Feb, 2025 • 6 min</div>
+</a>
+<!-- Next Post -->
+<a class="group p-5 rounded-2xl bg-surface-container-low hover:bg-surface-container transition-all shadow-sm flex flex-col justify-between text-left sm:text-right" href="#">
+<div class="flex items-center justify-start sm:justify-end gap-1.5 text-outline font-label-sm text-label-sm uppercase tracking-wider mb-2">
+<span class="">Siguiente Publicación</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</div>
+<div class="text-on-surface group-hover:text-primary font-headline-md text-headline-md tracking-tight transition-colors line-clamp-2">
+          Gobernanza de tokens multimarca con W3C Community Group Specs
+        </div>
+<div class="font-body-sm text-body-sm text-outline-variant mt-3">26 Feb, 2025 • 11 min</div>
+</a>
+</nav>
+</section>
+<!-- Reading Progression Micro-Script -->
+<script>
+    (function() {
+      // 1. Font-size scaling controls for reading comfort
+      const article = document.getElementById('article-body');
+      const incBtn = document.getElementById('font-increase-btn');
+      const decBtn = document.getElementById('font-decrease-btn');
+      let scaleLevel = 0; // -1, 0, 1
+
+      if (incBtn && decBtn && article) {
+        incBtn.addEventListener('click', () => {
+          if (scaleLevel < 1) {
+            scaleLevel++;
+            updateScale();
+          }
+        });
+        decBtn.addEventListener('click', () => {
+          if (scaleLevel > -1) {
+            scaleLevel--;
+            updateScale();
+          }
+        });
+
+        function updateScale() {
+          if (scaleLevel === 1) {
+            article.classList.add('text-lg');
+            article.style.fontSize = '1.1rem';
+          } else if (scaleLevel === -1) {
+            article.classList.remove('text-lg');
+            article.style.fontSize = '0.925rem';
+          } else {
+            article.classList.remove('text-lg');
+            article.style.fontSize = '';
+          }
+        }
+      }
+
+      // 2. Copy Code snippet interaction
+      const copyCodeBtn = document.getElementById('copy-code-btn');
+      const codeContent = document.getElementById('code-content');
+      const copyCodeStatus = document.getElementById('copy-code-status');
+
+      if (copyCodeBtn && codeContent && copyCodeStatus) {
+        copyCodeBtn.addEventListener('click', () => {
+          const text = codeContent.innerText;
+          navigator.clipboard.writeText(text).then(() => {
+            copyCodeStatus.textContent = 'Copiado!';
+            setTimeout(() => {
+              copyCodeStatus.textContent = 'Copiar snippet';
+            }, 2000);
+          }).catch(() => {
+            copyCodeStatus.textContent = 'Copiado!';
+          });
+        });
+      }
+
+      // 3. Copy article link interaction
+      const copyLinkBtn = document.getElementById('copy-link-btn');
+      const copyBtnText = document.getElementById('copy-btn-text');
+
+      if (copyLinkBtn && copyBtnText) {
+        copyLinkBtn.addEventListener('click', () => {
+          navigator.clipboard.writeText(window.location.href).then(() => {
+            copyBtnText.textContent = 'Enlace copiado';
+            setTimeout(() => {
+              copyBtnText.textContent = 'Copiar enlace';
+            }, 2000);
+          });
+        });
+      }
+
+      // 4. Bookmark Toggle State
+      const bookmarkBtn = document.getElementById('bookmark-btn');
+      const bookmarkIcon = document.getElementById('bookmark-icon');
+      let bookmarked = false;
+
+      if (bookmarkBtn && bookmarkIcon) {
+        bookmarkBtn.addEventListener('click', () => {
+          bookmarked = !bookmarked;
+          if (bookmarked) {
+            bookmarkIcon.textContent = 'bookmark';
+            bookmarkIcon.classList.add('text-primary');
+          } else {
+            bookmarkIcon.textContent = 'bookmark_border';
+            bookmarkIcon.classList.remove('text-primary');
+          }
+        });
+      }
+    })();
+  </script>
+</div></main>
+<!-- Floating Pill Navigation (Apple / Cupertino inspired) -->
+<!-- Minimalist Clean Footer -->
+<footer class="w-full bg-surface-container-lowest/80 py-12 relative z-10 border-t border-outline-variant/15">
+<div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant">
+<div class="flex items-center gap-space-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-on-surface-variant"></span>
+<span class="font-body-sm text-body-sm">Diseñado con precisión e intención en Cupertino &amp; Zurich</span>
+</div>
+<div class="font-body-sm text-body-sm">
+        © 2025 Todos los derechos reservados. Edición Dossier.
+      </div>
+</div>
+</footer>
+<!-- Interactivity Scripts: Pure vanilla, zero runtime exceptions -->
+<script>
+    (function () {
+      const filterButtons = document.querySelectorAll('.filter-tab');
+      const projectItems = document.querySelectorAll('.project-item');
+      const gridBtn = document.getElementById('view-grid-btn');
+      const listBtn = document.getElementById('view-list-btn');
+
+      // Filter tabs functionality
+      filterButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const filter = btn.getAttribute('data-filter');
+
+          filterButtons.forEach(b => {
+            b.classList.remove('bg-primary', 'text-on-primary');
+            b.classList.add('text-on-surface-variant');
+          });
+          btn.classList.add('bg-primary', 'text-on-primary');
+          btn.classList.remove('text-on-surface-variant');
+
+          projectItems.forEach(item => {
+            const categories = item.getAttribute('data-category') || '';
+            if (filter === 'all' || categories.includes(filter)) {
+              item.style.display = '';
+            } else {
+              item.style.display = 'none';
+            }
+          });
+        });
+      });
+
+      // View switching logic (Grid vs Editorial Single Column List)
+      if (gridBtn && listBtn) {
+        listBtn.addEventListener('click', () => {
+          listBtn.classList.add('bg-surface-container-high', 'text-primary');
+          listBtn.classList.remove('text-on-surface-variant');
+          gridBtn.classList.remove('bg-surface-container-high', 'text-primary');
+          gridBtn.classList.add('text-on-surface-variant');
+
+          projectItems.forEach(item => {
+            item.classList.remove('lg:col-span-4', 'lg:col-span-6');
+            item.classList.add('lg:col-span-12');
+          });
+        });
+
+        gridBtn.addEventListener('click', () => {
+          gridBtn.classList.add('bg-surface-container-high', 'text-primary');
+          gridBtn.classList.remove('text-on-surface-variant');
+          listBtn.classList.remove('bg-surface-container-high', 'text-primary');
+          listBtn.classList.add('text-on-surface-variant');
+
+          projectItems.forEach((item, index) => {
+            item.classList.remove('lg:col-span-12');
+            if (index === 0) {
+              item.classList.add('lg:col-span-12');
+            } else if (index === 1 || index === 2) {
+              item.classList.add('lg:col-span-6');
+            } else {
+              item.classList.add('lg:col-span-4');
+            }
+          });
+        });
+      }
+    })();
+  </script>
+
+
+</body></html>

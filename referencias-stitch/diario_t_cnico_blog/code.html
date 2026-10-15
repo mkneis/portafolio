@@ -1,0 +1,500 @@
+<!DOCTYPE html><html class="dark" lang="es"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Diario Técnico &amp; Blog</title>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-dim": "#131315",
+            "surface": "#131315",
+            "surface-container-lowest": "#0e0e10",
+            "surface-container-low": "#1b1b1d",
+            "surface-container": "#201f21",
+            "surface-container-high": "#2a2a2c",
+            "surface-container-highest": "#353437",
+            "outline": "#8e9192",
+            "outline-variant": "#2c2c2e",
+            "on-surface": "#fafafa",
+            "on-surface-variant": "#a1a1aa",
+            "primary": "#ffffff",
+            "on-primary": "#18181b",
+            "brand-accent": "#e4e4e7"
+          },
+          fontFamily: {
+            sans: ["Inter", "sans-serif"],
+            mono: ["JetBrains Mono", "monospace"]
+          }
+        }
+      }
+    };
+  </script>
+<style>
+    body {
+      background-color: #131315;
+      color: #fafafa;
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+    }
+    .custom-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+  </style>
+</head>
+<body class="bg-[#131315] text-[#fafafa] antialiased selection:bg-white/20 selection:text-white min-h-screen relative overflow-y-auto">
+<!-- Top Navigation Header -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-[#131315]/85 backdrop-blur-xl border-b border-[#2c2c2e]">
+<div class="max-w-7xl mx-auto px-6 lg:px-12 h-16 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<a class="flex items-center justify-center w-8 h-8 rounded-lg bg-[#201f21] border border-[#2c2c2e] text-white font-semibold text-sm hover:border-white/30 transition-colors" href="#">
+          M
+        </a>
+<div class="flex items-center gap-2 pl-2">
+<span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+<span class="text-xs text-zinc-400 font-medium tracking-wide uppercase hidden sm:inline">Disponible para proyectos</span>
+</div>
+</div>
+<nav class="hidden md:flex items-center gap-1 bg-[#1b1b1d] border border-[#2c2c2e] rounded-full p-1 shadow-sm"><a class="flex items-center px-3.5 py-1.5 rounded-full text-xs font-medium text-zinc-400 hover:text-white hover:bg-[#2c2c2e]/60 transition-all" href="#">Presentación &amp; CV</a><a class="flex items-center px-3.5 py-1.5 rounded-full text-xs font-medium text-zinc-400 hover:text-white hover:bg-[#2c2c2e]/60 transition-all" href="#">Proyectos</a><a class="flex items-center px-3.5 py-1.5 rounded-full text-xs font-semibold bg-white text-zinc-950 shadow-sm transition-all" href="#">Diario &amp; Blog</a><a class="flex items-center px-3.5 py-1.5 rounded-full text-xs font-medium text-zinc-400 hover:text-white hover:bg-[#2c2c2e]/60 transition-all" href="#">Contacto</a></nav><div class="flex items-center gap-4">
+<div class="flex items-center gap-2 text-zinc-400">
+<a aria-label="GitHub" class="flex items-center justify-center w-8 h-8 rounded-full bg-[#1b1b1d] border border-[#2c2c2e] hover:text-white hover:border-zinc-500 transition-all" href="#">
+<span class="material-symbols-outlined text-[17px]">code</span>
+</a>
+<a aria-label="Web" class="flex items-center justify-center w-8 h-8 rounded-full bg-[#1b1b1d] border border-[#2c2c2e] hover:text-white hover:border-zinc-500 transition-all" href="#">
+<span class="material-symbols-outlined text-[17px]">public</span>
+</a>
+<a aria-label="Terminal" class="flex items-center justify-center w-8 h-8 rounded-full bg-[#1b1b1d] border border-[#2c2c2e] hover:text-white hover:border-zinc-500 transition-all" href="#">
+<span class="material-symbols-outlined text-[17px]">terminal</span>
+</a>
+</div>
+<div class="w-px h-5 bg-[#2c2c2e]"></div>
+<img alt="Avatar" class="w-8 h-8 rounded-full object-cover border border-[#2c2c2e]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1UFjvGj5CEqMEbUTTJWCBuevvScCaTDnjI9mXFJXGKIFNjy-sWDwVISSRo1p5pmzNsenqaiTSdcz4uTVjnLdxhqtPgzyX48Iht8jFQw9AZ802lwFjsCQtdyH2Il_P9neZ50OAjlend27vfbKM6fiVGEUcng4KDdDCx7acQ3J6spOs4oA32BLAAAN4YcvEEgVUtJCbwOwAq1USSB2o9SxdCk6D4qTr9IEXXuGDcYj-tcvIfalBctTVtA">
+</div>
+</div>
+</header>
+<!-- Main Content Wrapper -->
+<main class="w-full pt-24 pb-32 bg-[#131315] min-h-screen">
+<!-- Hero / Header Editorial -->
+<section class="max-w-6xl mx-auto px-6 lg:px-12 pt-6 pb-10">
+<!-- Breadcrumb / Status line -->
+<div class="flex flex-wrap items-center justify-between gap-4 pb-6 border-b border-[#2c2c2e]/60">
+<div class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-white"></span>
+<span class="font-mono text-xs uppercase tracking-wider text-zinc-400">Bitácora Técnica • Apuntes Diarios &amp; Descubrimientos • 2025</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="text-xs text-zinc-300 bg-[#1b1b1d] border border-[#2c2c2e] px-3 py-1 rounded-full">48 apuntes documentados</span>
+<span class="text-xs text-white bg-[#1b1b1d] border border-[#2c2c2e] px-3 py-1 rounded-full flex items-center gap-1.5 font-medium">
+<span class="">🔥</span> 14 días racha activa
+          </span>
+</div>
+</div>
+<!-- Main Title -->
+<div class="pt-8 max-w-3xl">
+<h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white">
+          Diario Técnico &amp; Blog
+        </h1>
+<p class="text-lg sm:text-xl text-zinc-300 pt-4 leading-relaxed font-normal">
+          Registro continuo de aprendizajes de ingeniería, arquitectura web, microinteracciones, shaders y notas prácticas recopiladas en la trinchera del desarrollo.
+        </p>
+</div>
+<!-- Search & Filters Toolbar -->
+<div class="pt-8 flex flex-col md:flex-row gap-4 items-stretch md:items-center justify-between">
+<!-- Search bar -->
+<div class="relative flex-1 max-w-md">
+<div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-zinc-400">
+<span class="material-symbols-outlined text-[19px]">search</span>
+</div>
+<input class="w-full bg-[#1b1b1d] border border-[#2c2c2e] pl-10 pr-14 py-2.5 rounded-xl text-sm text-zinc-100 placeholder:text-zinc-500 focus:outline-none focus:border-zinc-400 focus:ring-1 focus:ring-zinc-400 transition-all shadow-sm" placeholder="Buscar apuntes, APIs, tags o conceptos..." type="text">
+<div class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
+<kbd class="text-[11px] font-mono text-zinc-400 bg-[#252528] border border-[#353538] px-1.5 py-0.5 rounded">⌘K</kbd>
+</div>
+</div>
+<!-- Pill chips (iOS style) -->
+<div class="flex items-center gap-2 overflow-x-auto custom-scrollbar pb-1 md:pb-0">
+<button class="px-4 py-1.5 rounded-full text-xs font-semibold bg-white text-zinc-950 whitespace-nowrap shadow transition-all hover:bg-zinc-200">
+            Todos
+          </button>
+<button class="px-4 py-1.5 rounded-full text-xs font-medium bg-[#1b1b1d] border border-[#2c2c2e] text-zinc-300 hover:text-white hover:border-zinc-500 whitespace-nowrap transition-all">
+            TIL
+          </button>
+<button class="px-4 py-1.5 rounded-full text-xs font-medium bg-[#1b1b1d] border border-[#2c2c2e] text-zinc-300 hover:text-white hover:border-zinc-500 whitespace-nowrap transition-all">
+            WebGL
+          </button>
+<button class="px-4 py-1.5 rounded-full text-xs font-medium bg-[#1b1b1d] border border-[#2c2c2e] text-zinc-300 hover:text-white hover:border-zinc-500 whitespace-nowrap transition-all">
+            Rendimiento
+          </button>
+<button class="px-4 py-1.5 rounded-full text-xs font-medium bg-[#1b1b1d] border border-[#2c2c2e] text-zinc-300 hover:text-white hover:border-zinc-500 whitespace-nowrap transition-all">
+            Arquitectura
+          </button>
+</div>
+</div>
+</section>
+<!-- Entrada Destacada -->
+<section class="max-w-6xl mx-auto px-6 lg:px-12 pb-14">
+<div class="bg-[#1b1b1d] border border-[#2c2c2e] rounded-2xl p-6 lg:p-8 relative overflow-hidden shadow-xl hover:border-zinc-600 transition-all group">
+<!-- Header row of the featured card -->
+<div class="flex flex-wrap items-center justify-between gap-3 pb-5 border-b border-[#2c2c2e]/70">
+<div class="flex items-center gap-2.5">
+<span class="px-2.5 py-0.5 rounded-full bg-white text-zinc-950 text-xs font-bold uppercase tracking-wider">
+              Destacado
+            </span>
+<span class="text-xs text-zinc-400">24 de Octubre, 2025</span>
+</div>
+<div class="flex items-center gap-1.5 text-xs text-zinc-400">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+<span class="">4 min de lectura</span>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 pt-6 items-start">
+<div class="lg:col-span-7 flex flex-col justify-between h-full">
+<div>
+<h2 class="text-2xl sm:text-3xl font-bold text-white tracking-tight leading-snug group-hover:text-zinc-200 transition-colors">
+                La ilusión de la inmediatez: Física de resortes en la web moderna
+              </h2>
+<p class="text-zinc-300 pt-3 text-base leading-relaxed">
+                Cuando una interfaz responde con curvas Bézier estáticas, se percibe rígida y mecánica. Utilizando <code class="text-white bg-[#2a2a2c] px-1.5 py-0.5 rounded text-sm font-mono border border-[#38383a]">linear()</code> interpolado calculamos la inercia del lanzamiento táctil del usuario, alcanzando una amortiguación crítica natural sin rebotes exagerados.
+              </p>
+<div class="flex flex-wrap items-center gap-2 pt-5">
+<span class="bg-[#201f21] border border-[#2c2c2e] text-zinc-300 text-xs px-2.5 py-1 rounded-full font-mono">#Physics</span>
+<span class="bg-[#201f21] border border-[#2c2c2e] text-zinc-300 text-xs px-2.5 py-1 rounded-full font-mono">#Animation</span>
+<span class="bg-[#201f21] border border-[#2c2c2e] text-zinc-300 text-xs px-2.5 py-1 rounded-full font-mono">#CSS-linear</span>
+<span class="bg-[#201f21] border border-[#2c2c2e] text-zinc-300 text-xs px-2.5 py-1 rounded-full font-mono">#WebPerf</span>
+</div>
+</div>
+<div class="pt-8">
+<a class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white text-zinc-950 font-medium text-sm hover:bg-zinc-200 transition-all shadow-md" href="#">
+<span class="">Leer ensayo completo</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Code Snippet Box with Highlight & Copy Button -->
+<div class="lg:col-span-5 bg-[#0e0e10] border border-[#2c2c2e] rounded-xl p-4 shadow-2xl">
+<div class="flex items-center justify-between pb-3 border-b border-[#2c2c2e]/60">
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded-full bg-[#ff5f56]"></span>
+<span class="w-3 h-3 rounded-full bg-[#ffbd2e]"></span>
+<span class="w-3 h-3 rounded-full bg-[#27c93f]"></span>
+<span class="font-mono text-xs text-zinc-400 pl-2">spring-physics.ts</span>
+</div>
+<button class="font-mono text-xs text-zinc-400 hover:text-white transition-colors flex items-center gap-1 bg-[#1b1b1d] border border-[#2c2c2e] px-2 py-1 rounded" id="copy-btn-featured" onclick="navigator.clipboard.writeText('export function solveSpring(mass: number, stiffness: number, damping: number) {\n  const w0 = Math.sqrt(stiffness / mass);\n  const zeta = damping / (2 * Math.sqrt(stiffness * mass));\n  return (t: number) =&gt; 1 - Math.exp(-zeta * w0 * t) * Math.cos(w0 * Math.sqrt(1 - zeta*zeta) * t);\n}'); this.innerHTML='&lt;span class=\'material-symbols-outlined text-[14px]\'&gt;done&lt;/span&gt; Copiado!';">
+<span class="material-symbols-outlined text-[14px]">content_copy</span>
+<span class="">Copiar</span>
+</button>
+</div>
+<pre class="font-mono text-xs leading-5 text-zinc-200 overflow-x-auto p-3 mt-2 bg-[#131315] rounded-lg border border-[#222225]"><code><span class="text-zinc-500">// Amortiguación crítica sin oscilación residual</span>
+<span class="text-purple-400 font-semibold">export function</span> <span class="text-blue-300">solveSpring</span>(
+  mass: <span class="text-amber-300">number</span>,
+  stiffness: <span class="text-amber-300">number</span>,
+  damping: <span class="text-amber-300">number</span>
+) {
+  <span class="text-purple-400 font-semibold">const</span> w0 = Math.<span class="text-blue-300">sqrt</span>(stiffness / mass);
+  <span class="text-purple-400 font-semibold">const</span> zeta = damping / (<span class="text-emerald-300">2</span> * Math.<span class="text-blue-300">sqrt</span>(stiffness * mass));
+
+  <span class="text-purple-400 font-semibold">return</span> (t: <span class="text-amber-300">number</span>) =&gt; {
+    <span class="text-purple-400 font-semibold">const</span> decay = Math.<span class="text-blue-300">exp</span>(-zeta * w0 * t);
+    <span class="text-purple-400 font-semibold">return</span> <span class="text-emerald-300">1</span> - decay * Math.<span class="text-blue-300">cos</span>(w0 * Math.<span class="text-blue-300">sqrt</span>(<span class="text-emerald-300">1</span> - zeta * zeta) * t);
+  };
+}</code></pre>
+<div class="pt-3 flex items-center justify-between text-xs text-zinc-400 font-mono">
+<span class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+                60fps Compositor
+              </span>
+<span class="">TypeScript 5.4</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Main Two-Column Layout: Chronological Feed (8 cols) + Sidebar (4 cols) -->
+<section class="max-w-6xl mx-auto px-6 lg:px-12 pb-20">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+<!-- Chronological Technical Feed -->
+<div class="lg:col-span-8 space-y-5">
+<div class="flex items-center justify-between pb-2">
+<h3 class="text-xl font-bold text-white tracking-tight flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-zinc-400">dynamic_feed</span>
+              Publicaciones Recientes
+            </h3>
+<span class="text-xs text-zinc-400 font-mono">Cronológico inverso</span>
+</div>
+<!-- Entry 1: OffscreenCanvas & Web Workers -->
+<article class="bg-[#1b1b1d] border border-[#2c2c2e] hover:border-zinc-500 rounded-2xl p-6 transition-all duration-200 group">
+<div class="flex items-center justify-between gap-2 pb-3">
+<div class="flex items-center gap-2">
+<span class="text-xs text-zinc-400 font-mono">23 Octubre, 2025</span>
+<span class="w-1 h-1 rounded-full bg-zinc-600"></span>
+<span class="bg-[#201f21] border border-[#2c2c2e] text-zinc-300 text-xs px-2 py-0.5 rounded-full font-medium">Rendimiento</span>
+</div>
+<span class="text-xs font-mono text-emerald-400 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">bolt</span>
+                0ms jank en Main Thread
+              </span>
+</div>
+<h4 class="text-xl font-bold text-white tracking-tight group-hover:text-zinc-200 transition-colors">
+              TIL: OffscreenCanvas y Web Workers para desacoplar el loop de renderizado gráfico
+            </h4>
+<p class="text-sm text-zinc-300 pt-2.5 leading-relaxed">
+              Mudar operaciones intensivas de simulación gráfica a un Worker dedicado liberó por completo el hilo principal del DOM. Ni siquiera el parsing JSON síncrono pesado interrumpe los 60 fps continuos del canvas.
+            </p>
+<div class="mt-4 p-3.5 rounded-xl bg-[#0e0e10] border border-[#2c2c2e] flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-white text-[20px]">speed</span>
+<div>
+<div class="text-xs font-semibold text-white">Pruebas en Chrome DevTools con CPU 4x Throttling</div>
+<div class="text-xs text-zinc-400">Frame pacing constante a 16.6ms exactos</div>
+</div>
+</div>
+<span class="text-xs text-emerald-400 font-mono bg-emerald-950/60 border border-emerald-800/60 px-2 py-1 rounded">Benchmark OK</span>
+</div>
+<div class="pt-4 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="text-xs font-mono text-zinc-400">#Canvas</span>
+<span class="text-xs font-mono text-zinc-400">#WebWorkers</span>
+<span class="text-xs font-mono text-zinc-400">#OffscreenCanvas</span>
+</div>
+<a class="text-xs font-medium text-white hover:text-zinc-300 flex items-center gap-1" href="#">
+<span class="">Leer apunte</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+</article>
+<!-- Entry 2: Design Tokens Semantics -->
+<article class="bg-[#1b1b1d] border border-[#2c2c2e] hover:border-zinc-500 rounded-2xl p-6 transition-all duration-200 group">
+<div class="flex items-center justify-between gap-2 pb-3">
+<div class="flex items-center gap-2">
+<span class="text-xs text-zinc-400 font-mono">21 Octubre, 2025</span>
+<span class="w-1 h-1 rounded-full bg-zinc-600"></span>
+<span class="bg-[#201f21] border border-[#2c2c2e] text-zinc-300 text-xs px-2 py-0.5 rounded-full font-medium">Design Systems</span>
+</div>
+<span class="text-xs text-zinc-400 font-mono">5 min lectura</span>
+</div>
+<h4 class="text-xl font-bold text-white tracking-tight group-hover:text-zinc-200 transition-colors">
+              Reflexión: Abstracciones prematuras en Design Tokens multimarca
+            </h4>
+<p class="text-sm text-zinc-300 pt-2.5 leading-relaxed">
+              Vincular variables directamente a componentes como <code class="text-white bg-[#2a2a2c] px-1 py-0.5 rounded font-mono text-xs">btn-primary-bg-hover</code> produce una explosión combinatoria inmanejable. La regla dorada: tres capas inmutables (Global &gt; Semántico &gt; Componente) donde el 85% de la aplicación sólo consume tokens semánticos contextuales.
+            </p>
+<div class="pt-4 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="text-xs font-mono text-zinc-400">#DesignTokens</span>
+<span class="text-xs font-mono text-zinc-400">#Arquitectura</span>
+<span class="text-xs font-mono text-zinc-400">#UI</span>
+</div>
+<a class="text-xs font-medium text-white hover:text-zinc-300 flex items-center gap-1" href="#">
+<span class="">Leer reflexión</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+</article>
+<!-- Entry 3: GLSL & Shaders Hermite Curves -->
+<article class="bg-[#1b1b1d] border border-[#2c2c2e] hover:border-zinc-500 rounded-2xl p-6 transition-all duration-200 group">
+<div class="flex items-center justify-between gap-2 pb-3">
+<div class="flex items-center gap-2">
+<span class="text-xs text-zinc-400 font-mono">19 Octubre, 2025</span>
+<span class="w-1 h-1 rounded-full bg-zinc-600"></span>
+<span class="bg-[#201f21] border border-[#2c2c2e] text-zinc-300 text-xs px-2 py-0.5 rounded-full font-medium">GLSL &amp; Shaders</span>
+</div>
+<span class="text-xs text-zinc-300 font-mono bg-[#201f21] px-2 py-0.5 rounded">Snippet + Demo</span>
+</div>
+<h4 class="text-xl font-bold text-white tracking-tight group-hover:text-zinc-200 transition-colors">
+              GLSL &amp; Shaders: Curvas Hermite para transiciones visuales de orden superior
+            </h4>
+<p class="text-sm text-zinc-300 pt-2.5 leading-relaxed">
+              Para evitar discontinuidades de aceleración (continuidad C1) en shaders interactivos de distorsión, la función <code class="text-white bg-[#2a2a2c] px-1 py-0.5 rounded font-mono text-xs">smoothstep()</code> clásica se queda corta. Implementación matemática de polinomios de Hermite de orden 5 (Perlin quintic) con continuidad C2 garantizada.
+            </p>
+<!-- Inline SVG Curve & Snippet Preview -->
+<div class="mt-4 p-4 rounded-xl bg-[#0e0e10] border border-[#2c2c2e] flex flex-col md:flex-row items-center justify-between gap-4">
+<div class="w-full md:w-1/2">
+<div class="text-xs font-mono text-zinc-400 pb-1">Curva Hermite Quintic (C2 Continuity):</div>
+<svg class="w-full h-14 text-white" fill="none" stroke="currentColor" viewBox="0 0 240 60">
+<line stroke="rgba(255,255,255,0.12)" stroke-width="1" x1="0" x2="240" y1="50" y2="50"></line>
+<line stroke="rgba(255,255,255,0.12)" stroke-width="1" x1="0" x2="240" y1="10" y2="10"></line>
+<path d="M 10 50 C 70 50, 90 10, 230 10" stroke="currentColor" stroke-linecap="round" stroke-width="2.5"></path>
+<circle cx="10" cy="50" fill="white" r="3.5"></circle>
+<circle cx="230" cy="10" fill="white" r="3.5"></circle>
+</svg>
+</div>
+<div class="w-full md:w-1/2 font-mono text-xs text-zinc-300 bg-[#131315] p-3 rounded-lg border border-[#222225]">
+<span class="text-amber-300">float</span> quintic(<span class="text-amber-300">float</span> t) {<br>
+                &nbsp;&nbsp;<span class="text-purple-400">return</span> t * t * t * (t * (t * 6.0 - 15.0) + 10.0);<br>
+                }
+              </div>
+</div>
+<div class="pt-4 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="text-xs font-mono text-zinc-400">#GLSL</span>
+<span class="text-xs font-mono text-zinc-400">#WebGL</span>
+<span class="text-xs font-mono text-zinc-400">#Math</span>
+</div>
+<a class="text-xs font-medium text-white hover:text-zinc-300 flex items-center gap-1" href="#">
+<span class="">Ver código GLSL</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+</article>
+<!-- Entry 4: Microfrontends vs Monolito Modular -->
+<article class="bg-[#1b1b1d] border border-[#2c2c2e] hover:border-zinc-500 rounded-2xl p-6 transition-all duration-200 group">
+<div class="flex items-center justify-between gap-2 pb-3">
+<div class="flex items-center gap-2">
+<span class="text-xs text-zinc-400 font-mono">16 Octubre, 2025</span>
+<span class="w-1 h-1 rounded-full bg-zinc-600"></span>
+<span class="bg-[#201f21] border border-[#2c2c2e] text-zinc-300 text-xs px-2 py-0.5 rounded-full font-medium">Arquitectura</span>
+</div>
+<span class="text-xs text-zinc-400 font-mono">7 min lectura</span>
+</div>
+<h4 class="text-xl font-bold text-white tracking-tight group-hover:text-zinc-200 transition-colors">
+              Arquitectura: Microfrontends vs Monolito modular en equipos medianos
+            </h4>
+<p class="text-sm text-zinc-300 pt-2.5 leading-relaxed">
+              Los microfrontends solucionan cuellos de botella organizacionales en empresas de miles de ingenieros, no de rendimiento. Adoptar Module Federation prematuramente introduce complejidad de versionado, duplicación de runtimes y problemas sutiles de hidratación. Por qué un monorepo bien delimitado supera a los microfrontends el 95% de las veces.
+            </p>
+<div class="pt-4 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="text-xs font-mono text-zinc-400">#Architecture</span>
+<span class="text-xs font-mono text-zinc-400">#Monorepo</span>
+<span class="text-xs font-mono text-zinc-400">#ModuleFederation</span>
+</div>
+<a class="text-xs font-medium text-white hover:text-zinc-300 flex items-center gap-1" href="#">
+<span class="">Leer ensayo</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+</article>
+</div>
+<!-- Sidebar: Curated Lab & Newsletter -->
+<aside class="lg:col-span-4 space-y-6">
+<!-- Lecturas Recomendadas -->
+<div class="bg-[#1b1b1d] border border-[#2c2c2e] rounded-2xl p-6 shadow-md">
+<div class="flex items-center justify-between pb-3 border-b border-[#2c2c2e]/70">
+<h3 class="text-base font-bold text-white tracking-tight flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-zinc-400">bookmark</span>
+                Lecturas de la Semana
+              </h3>
+<span class="text-xs text-zinc-400 font-mono">Curadas</span>
+</div>
+<p class="text-xs text-zinc-400 pt-3 leading-relaxed">
+              Tres lecturas seleccionadas que aportaron valor directo a mi flujo de trabajo en los últimos 7 días.
+            </p>
+<div class="mt-4 space-y-3">
+<a class="block p-3 rounded-xl bg-[#201f21] border border-[#2c2c2e] hover:border-zinc-500 transition-all group" href="#">
+<span class="text-[11px] font-mono text-zinc-400 uppercase tracking-wider">Ingeniería Gráfica</span>
+<div class="text-sm font-semibold text-white pt-1 group-hover:text-zinc-200">Inside WebGPU Pipeline Caching</div>
+<p class="text-xs text-zinc-400 pt-1 leading-normal">
+                  Cómo el precalentamiento de pipeline layouts elimina los stutters en la primera renderización de un shader.
+                </p>
+</a>
+<a class="block p-3 rounded-xl bg-[#201f21] border border-[#2c2c2e] hover:border-zinc-500 transition-all group" href="#">
+<span class="text-[11px] font-mono text-zinc-400 uppercase tracking-wider">Física de Interfaces</span>
+<div class="text-sm font-semibold text-white pt-1 group-hover:text-zinc-200">Apple HIG: The Geometry of Spatial Gestures</div>
+<p class="text-xs text-zinc-400 pt-1 leading-normal">
+                  La resistencia viscoelástica como feedback intuitivo frente al input del puntero.
+                </p>
+</a>
+<a class="block p-3 rounded-xl bg-[#201f21] border border-[#2c2c2e] hover:border-zinc-500 transition-all group" href="#">
+<span class="text-[11px] font-mono text-zinc-400 uppercase tracking-wider">WebAssembly</span>
+<div class="text-sm font-semibold text-white pt-1 group-hover:text-zinc-200">Rust &amp; Shared Memory Buffers</div>
+<p class="text-xs text-zinc-400 pt-1 leading-normal">
+                  Estrategias para transferencias de datos sin copia (zero-copy) entre JavaScript y WebAssembly.
+                </p>
+</a>
+</div>
+</div>
+<!-- Newsletter / RSS Box -->
+<div class="bg-[#1b1b1d] border border-[#2c2c2e] rounded-2xl p-6 shadow-md relative">
+<div class="flex items-center gap-2 pb-2">
+<span class="material-symbols-outlined text-white text-[20px]">rss_feed</span>
+<h3 class="text-base font-bold text-white tracking-tight">Síntesis Dominical</h3>
+</div>
+<p class="text-xs text-zinc-300 leading-relaxed pt-1">
+              Recibe cada domingo por la mañana un resumen con los snippets de código probados, microbenchmarks y notas de diseño de sistemas. Sin spam, baja frecuencia.
+            </p>
+<form class="mt-4 space-y-3" onsubmit="event.preventDefault(); document.getElementById('sub-alert').classList.remove('hidden');">
+<input class="w-full bg-[#0e0e10] border border-[#2c2c2e] px-3.5 py-2.5 rounded-xl text-xs text-zinc-100 placeholder:text-zinc-500 focus:outline-none focus:border-zinc-400 transition-all" placeholder="tu.correo@ingenieria.com" required="" type="email">
+<button class="w-full py-2.5 rounded-xl bg-white text-zinc-950 text-xs font-semibold hover:bg-zinc-200 transition-all shadow" type="submit">
+                Suscribirme al Feed
+              </button>
+</form>
+<div class="hidden mt-3 text-xs text-emerald-400 text-center font-mono" id="sub-alert">
+              ✓ ¡Suscrito con éxito! Recibirás la próxima entrega.
+            </div>
+</div>
+<!-- Quick Navigation Card -->
+<div class="bg-[#1b1b1d] border border-[#2c2c2e] rounded-2xl p-6 shadow-md">
+<h4 class="text-xs font-mono uppercase tracking-wider text-zinc-400 pb-3 border-b border-[#2c2c2e]/70">Dossier de Ingeniería</h4>
+<div class="space-y-2 pt-3">
+<a class="flex items-center justify-between p-2.5 rounded-xl bg-[#201f21] border border-[#2c2c2e] hover:border-zinc-500 text-zinc-200 hover:text-white transition-all text-xs font-medium" href="#">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[17px] text-zinc-400">badge</span>
+<span class="">Presentación &amp; CV Ejecutivo</span>
+</div>
+<span class="material-symbols-outlined text-[15px]">arrow_forward</span>
+</a>
+<a class="flex items-center justify-between p-2.5 rounded-xl bg-[#201f21] border border-[#2c2c2e] hover:border-zinc-500 text-zinc-200 hover:text-white transition-all text-xs font-medium" href="#">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[17px] text-zinc-400">deployed_code</span>
+<span class="">Proyectos Seleccionados</span>
+</div>
+<span class="material-symbols-outlined text-[15px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</aside>
+</div>
+</section>
+<!-- Global Technical Contact Banner -->
+<section class="max-w-6xl mx-auto px-6 lg:px-12 pb-16">
+<div class="bg-[#1b1b1d] border border-[#2c2c2e] rounded-2xl p-8 lg:p-10 shadow-xl flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+<div class="max-w-xl">
+<div class="text-xs font-mono uppercase tracking-wider text-zinc-400 pb-2">Diálogo Técnico Directo</div>
+<h3 class="text-2xl font-bold text-white tracking-tight">
+            ¿Tienes una idea o quieres debatir sobre arquitectura frontend?
+          </h3>
+<p class="text-sm text-zinc-300 pt-2 leading-relaxed">
+            Siempre dispuesto a hablar sobre ergonomía de código, optimizaciones de bajo nivel en el navegador o proyectos de interfaz de alto impacto.
+          </p>
+</div>
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full md:w-auto">
+<a class="px-5 py-2.5 rounded-full bg-white text-zinc-950 text-xs font-semibold text-center hover:bg-zinc-200 transition-all shadow" href="#">
+            Iniciar Conversación
+          </a>
+<button class="px-5 py-2.5 rounded-full bg-[#201f21] border border-[#2c2c2e] text-zinc-200 hover:text-white text-xs font-medium text-center hover:border-zinc-500 transition-all" onclick="navigator.clipboard.writeText('hola@ingenieria.dev'); this.innerText='Copiado!';">
+            Copiar Email
+          </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Floating Bottom Pill Navigation Bar -->
+
+<!-- Footer with Links to CV, Projects, Contact -->
+<footer class="w-full bg-[#0e0e10] border-t border-[#2c2c2e] py-12 relative z-10 text-zinc-400">
+<div class="max-w-6xl mx-auto px-6 lg:px-12 flex flex-col md:flex-row items-center justify-between gap-6">
+<div class="flex items-center gap-2 text-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+<span class="">Diario Técnico &amp; Notas de Ingeniería • Edición Dossier 2025</span>
+</div>
+<div class="flex items-center gap-6 text-xs">
+<a class="hover:text-white transition-colors" href="#">Presentación &amp; CV</a>
+<a class="hover:text-white transition-colors" href="#">Proyectos</a>
+<a class="hover:text-white transition-colors" href="#">Contacto</a>
+</div>
+<div class="text-xs text-zinc-400">
+        © 2025 Todos los derechos reservados.
+      </div>
+</div>
+</footer>
+
+
+</body></html>

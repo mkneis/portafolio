@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es" style="min-height: 100vh; height: auto !important; overflow-y: auto !important;"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="web_standard" name="shell-type"/>
+<title>Proyectos Seleccionados — Portfolio</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+    @layer base {
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        overscroll-behavior: auto;
+      }
+    }
+  </style>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-container-low": "#1b1b1d",
+            "surface-dim": "#131315",
+            "tertiary-fixed": "#e7e1dd",
+            "surface-bright": "#39393b",
+            "surface-container-highest": "#353437",
+            "on-secondary-container": "#b4b4bd",
+            "on-tertiary-fixed": "#1d1b19",
+            "surface-container-high": "#2a2a2c",
+            "inverse-on-surface": "#303032",
+            "on-error-container": "#ffdad6",
+            "on-primary": "#2f3131",
+            "on-primary-fixed-variant": "#454747",
+            "primary-fixed": "#e2e2e2",
+            "primary-fixed-dim": "#c6c6c7",
+            "on-background": "#e5e1e4",
+            "error": "#ffb4ab",
+            "background": "#131315",
+            "outline-variant": "#444748",
+            "error-container": "#93000a",
+            "surface-container-lowest": "#0e0e10",
+            "on-primary-container": "#636565",
+            "tertiary": "#ffffff",
+            "tertiary-fixed-dim": "#cbc6c1",
+            "outline": "#8e9192",
+            "on-error": "#690005",
+            "on-surface-variant": "#c4c7c8",
+            "surface-variant": "#353437",
+            "surface-container": "#201f21",
+            "on-secondary-fixed": "#1a1b22",
+            "on-primary-fixed": "#1a1c1c",
+            "inverse-primary": "#5d5f5f",
+            "primary": "#ffffff",
+            "secondary": "#c6c6cf",
+            "primary-container": "#e2e2e2",
+            "secondary-fixed-dim": "#c6c6cf",
+            "on-secondary": "#2f3037",
+            "inverse-surface": "#e5e1e4",
+            "on-surface": "#e5e1e4",
+            "tertiary-container": "#e7e1dd",
+            "secondary-container": "#45464e",
+            "surface": "#131315",
+            "on-tertiary": "#32302d",
+            "surface-tint": "#c6c6c7",
+            "on-secondary-fixed-variant": "#45464e",
+            "secondary-fixed": "#e2e1eb",
+            "on-tertiary-fixed-variant": "#494643",
+            "on-tertiary-container": "#676460"
+          },
+          borderRadius: {
+            DEFAULT: "0.25rem",
+            lg: "0.5rem",
+            xl: "0.75rem",
+            full: "9999px"
+          },
+          spacing: {
+            "space-lg": "1.5rem",
+            "space-sm": "0.5rem",
+            "space-xs": "0.25rem",
+            "gutter-sm": "1rem",
+            "space-md": "0.875rem",
+            margin: "3rem",
+            "margin-sm": "1.25rem",
+            "space-xl": "2.5rem",
+            gutter: "1.5rem"
+          },
+          fontFamily: {
+            "label-md": ["Inter", "sans-serif"],
+            "headline-lg": ["Inter", "sans-serif"],
+            "label-sm": ["Inter", "sans-serif"],
+            "headline-md": ["Inter", "sans-serif"],
+            "body-lg": ["Inter", "sans-serif"],
+            "body-md": ["Inter", "sans-serif"],
+            "body-sm": ["Inter", "sans-serif"],
+            "headline-xl": ["Inter", "sans-serif"],
+            "display-lg-mobile": ["Inter", "sans-serif"],
+            "display-lg": ["Inter", "sans-serif"]
+          },
+          fontSize: {
+            "label-md": ["13px", { lineHeight: "16px", letterSpacing: "0.01em", fontWeight: "500" }],
+            "headline-lg": ["24px", { lineHeight: "32px", letterSpacing: "-0.02em", fontWeight: "500" }],
+            "label-sm": ["11px", { lineHeight: "14px", letterSpacing: "0.04em", fontWeight: "600" }],
+            "headline-md": ["20px", { lineHeight: "28px", letterSpacing: "-0.015em", fontWeight: "500" }],
+            "body-lg": ["17px", { lineHeight: "26px", letterSpacing: "-0.01em", fontWeight: "400" }],
+            "body-md": ["15px", { lineHeight: "24px", letterSpacing: "-0.005em", fontWeight: "400" }],
+            "body-sm": ["13px", { lineHeight: "18px", letterSpacing: "0em", fontWeight: "400" }],
+            "headline-xl": ["32px", { lineHeight: "40px", letterSpacing: "-0.025em", fontWeight: "600" }],
+            "display-lg-mobile": ["36px", { lineHeight: "44px", letterSpacing: "-0.025em", fontWeight: "600" }],
+            "display-lg": ["56px", { lineHeight: "64px", letterSpacing: "-0.035em", fontWeight: "600" }]
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-background font-body-md text-on-surface antialiased selection:bg-surface-bright selection:text-primary relative min-h-screen" style="min-height: 100vh; height: auto !important; overflow-y: auto !important;">
+<!-- Fixed Top Header -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-surface/80 backdrop-blur-2xl border-b border-outline-variant/15">
+<div class="h-16 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between">
+<!-- Left: Logo & Availability Badge -->
+<div class="flex items-center gap-space-md">
+<a class="flex items-center justify-center w-8 h-8 rounded-lg bg-surface-container-high text-primary font-headline-md text-headline-md tracking-tight select-none border border-outline-variant/20 hover:border-outline-variant/40 transition-colors" href="#">
+          M
+        </a>
+<div class="flex items-center gap-2 pl-space-xs">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider hidden sm:inline">Disponible para proyectos</span>
+</div>
+</div>
+<!-- Right: Links, Dark Mode, Profile -->
+<div class="hidden md:flex items-center justify-center"><div class="bg-surface-container-low/90 backdrop-blur-2xl rounded-full p-1 border border-outline-variant/30 shadow-sm"><nav class="flex items-center gap-1"><a class="flex items-center px-4 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all duration-200" href="#">Presentación &amp; CV</a><a class="flex items-center px-4 py-1.5 rounded-full font-label-md text-label-md bg-primary text-on-primary font-semibold transition-all duration-200" href="#">Proyectos</a><a class="flex items-center px-4 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all duration-200" href="#">Diario / Blog</a><a class="flex items-center px-4 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all duration-200" href="#">Contacto</a></nav></div></div><div class="flex items-center gap-4 sm:gap-space-lg">
+<div class="flex items-center gap-2 sm:gap-space-md text-on-surface-variant">
+<a aria-label="Code Repository" class="flex items-center justify-center w-8 h-8 rounded-full bg-surface-container/60 hover:bg-surface-container-high hover:text-on-surface transition-all border border-outline-variant/10" href="#">
+<span class="material-symbols-outlined text-[18px]">code</span>
+</a>
+<a aria-label="Global Network" class="flex items-center justify-center w-8 h-8 rounded-full bg-surface-container/60 hover:bg-surface-container-high hover:text-on-surface transition-all border border-outline-variant/10" href="#">
+<span class="material-symbols-outlined text-[18px]">public</span>
+</a>
+<a aria-label="Terminal" class="flex items-center justify-center w-8 h-8 rounded-full bg-surface-container/60 hover:bg-surface-container-high hover:text-on-surface transition-all border border-outline-variant/10" href="#">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+</a>
+<a aria-label="Email Communication" class="flex items-center justify-center w-8 h-8 rounded-full bg-surface-container/60 hover:bg-surface-container-high hover:text-on-surface transition-all border border-outline-variant/10" href="#">
+<span class="material-symbols-outlined text-[18px]">mail</span>
+</a>
+</div>
+<div class="w-12 h-6 rounded-full bg-surface-container p-0.5 flex items-center justify-end cursor-pointer border border-outline-variant/20">
+<div class="w-5 h-5 rounded-full bg-primary flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-surface text-[12px]">dark_mode</span>
+</div>
+</div>
+<div class="pl-1">
+<img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-outline-variant/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1UFjvGj5CEqMEbUTTJWCBuevvScCaTDnjI9mXFJXGKIFNjy-sWDwVISSRo1p5pmzNsenqaiTSdcz4uTVjnLdxhqtPgzyX48Iht8jFQw9AZ802lwFjsCQtdyH2Il_P9neZ50OAjlend27vfbKM6fiVGEUcng4KDdDCx7acQ3J6spOs4oA32BLAAAN4YcvEEgVUtJCbwOwAq1USSB2o9SxdCk6D4qTr9IEXXuGDcYj-tcvIfalBctTVtA"/>
+</div>
+</div>
+</div>
+</header>
+<!-- Main Content Viewport -->
+<main class="w-full pt-16 pb-32 bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- Sub-header Breadcrumb / Navigation Bar -->
+<section class="w-full bg-surface-container-lowest/80 backdrop-blur-md sticky top-16 z-40">
+<div class="max-w-7xl mx-auto px-6 lg:px-12 py-4 flex flex-wrap items-center justify-between gap-4">
+<!-- Back & Breadcrumb -->
+<div class="flex items-center gap-4 flex-wrap">
+<a class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-all text-label-md font-label-md" href="#">
+<span class="material-symbols-outlined text-[16px]">arrow_back</span>
+<span>Volver a Proyectos</span>
+</a>
+<div class="hidden sm:flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<span class="text-on-surface-variant/60">Proyectos</span>
+<span class="text-on-surface-variant/40">/</span>
+<span class="text-on-surface-variant/60">Sistemas de Interacción</span>
+<span class="text-on-surface-variant/40">/</span>
+<span class="text-primary font-medium">Aether UI</span>
+</div>
+</div>
+<!-- Quick Action Badges & Status -->
+<div class="flex items-center gap-3">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-high text-on-surface text-label-sm font-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-[#10b981] animate-pulse"></span>
+<span>v2.4.0 • Producción Estable</span>
+</div>
+<div class="hidden md:flex items-center gap-2">
+<a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-primary transition-colors text-label-md font-label-md" href="#">
+<span>Demo</span>
+<span class="material-symbols-outlined text-[14px]">north_east</span>
+</a>
+<a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-primary transition-colors text-label-md font-label-md" href="#">
+<span class="material-symbols-outlined text-[14px]">star</span>
+<span>4.8k GitHub</span>
+<span class="material-symbols-outlined text-[14px]">north_east</span>
+</a>
+<a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-primary transition-colors text-label-md font-label-md" href="#">
+<span>NPM</span>
+<span class="material-symbols-outlined text-[14px]">north_east</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Hero Section -->
+<section class="max-w-7xl mx-auto px-6 lg:px-12 pt-12 pb-16 w-full">
+<div class="max-w-4xl flex flex-col gap-6">
+<div class="flex items-center gap-3">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant text-label-sm font-label-sm uppercase tracking-widest">Case Study • Core Infrastructure</span>
+<span class="text-on-surface-variant/40 font-label-sm text-label-sm">•</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">14 Meses R&amp;D</span>
+</div>
+<h1 class="text-display-lg font-display-lg text-primary tracking-tight">
+        Aether UI
+      </h1>
+<p class="text-headline-md font-headline-md text-on-surface-variant leading-relaxed">
+        Micro-framework de física elástica y gestualidad inercial para interfaces táctiles de alta frecuencia (120Hz+).
+      </p>
+<p class="text-body-lg font-body-lg text-on-surface leading-relaxed max-w-3xl">
+        Aether UI resuelve la pérdida de fotogramas en pantallas táctiles de alta densidad durante manipulaciones espaciales continuas. Al desacoplar el cálculo inercial del ciclo de reconciliación DOM mediante un hilo de ejecución aislado (Offscreen Worker) y transformaciones matriciales directas a GPU, el framework asegura una experiencia táctil indistinguible de una superficie analógica.
+      </p>
+</div>
+<!-- Metadata Grid Card Panel -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-12">
+<div class="bg-surface-container-low p-6 rounded-xl flex flex-col justify-between">
+<span class="text-label-sm font-label-sm uppercase tracking-widest text-on-surface-variant">Rol &amp; Alcance</span>
+<span class="text-headline-md font-headline-md text-primary mt-3">Lead Architect</span>
+<span class="text-body-sm font-body-sm text-on-surface-variant mt-1">Arquitectura de motor y pipeline físico</span>
+</div>
+<div class="bg-surface-container-low p-6 rounded-xl flex flex-col justify-between">
+<span class="text-label-sm font-label-sm uppercase tracking-widest text-on-surface-variant">Ciclo Cronológico</span>
+<span class="text-headline-md font-headline-md text-primary mt-3">2023 – 2024</span>
+<span class="text-body-sm font-body-sm text-on-surface-variant mt-1">14 meses continuos (v1.0 a v2.4)</span>
+</div>
+<div class="bg-surface-container-low p-6 rounded-xl flex flex-col justify-between">
+<span class="text-label-sm font-label-sm uppercase tracking-widest text-on-surface-variant">Distribución</span>
+<span class="text-headline-md font-headline-md text-primary mt-3">Open Source</span>
+<span class="text-body-sm font-body-sm text-on-surface-variant mt-1">Licencia MIT • Core Ecosystem</span>
+</div>
+<div class="bg-surface-container-low p-6 rounded-xl flex flex-col justify-between">
+<span class="text-label-sm font-label-sm uppercase tracking-widest text-on-surface-variant">Tecnologías Clave</span>
+<div class="flex flex-wrap gap-1.5 mt-3">
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-on-surface text-label-sm font-label-sm">TypeScript</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-on-surface text-label-sm font-label-sm">WASM / Rust</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-on-surface text-label-sm font-label-sm">SharedBuffer</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-on-surface text-label-sm font-label-sm">WebGL 2</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Visual Showcase / Workbench Terminal -->
+<section class="max-w-7xl mx-auto px-6 lg:px-12 py-8 w-full">
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-xl">
+<!-- Window Title Bar -->
+<div class="bg-surface-container-low px-6 py-4 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-surface-bright"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-surface-bright"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-surface-bright"></span>
+</div>
+<span class="text-on-surface-variant font-label-sm text-label-sm pl-2">workbench@aether-runtime: ~/benchmarks/spring-loop.ts</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded text-[11px] font-mono uppercase bg-surface-container text-[#10b981] font-medium flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-[#10b981]"></span>
+            Active 120Hz Loop
+          </span>
+</div>
+</div>
+<!-- Realtime Benchmark Metrics Quad -->
+<div class="grid grid-cols-2 lg:grid-cols-4 bg-surface-container-low/40">
+<div class="p-6 flex flex-col justify-center">
+<div class="text-on-surface-variant text-label-sm font-label-sm uppercase tracking-wider">Latencia Táctil</div>
+<div class="flex items-baseline gap-2 mt-2">
+<span class="text-headline-xl font-headline-xl text-primary font-semibold">1.2</span>
+<span class="text-label-md font-label-md text-on-surface-variant">ms</span>
+</div>
+<div class="text-body-sm font-body-sm text-[#10b981] mt-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">trending_down</span>
+            vs. 16.6ms promedio web
+          </div>
+</div>
+<div class="p-6 flex flex-col justify-center">
+<div class="text-on-surface-variant text-label-sm font-label-sm uppercase tracking-wider">Tamaño de Paquete</div>
+<div class="flex items-baseline gap-2 mt-2">
+<span class="text-headline-xl font-headline-xl text-primary font-semibold">3.4</span>
+<span class="text-label-md font-label-md text-on-surface-variant">KB</span>
+</div>
+<div class="text-body-sm font-body-sm text-on-surface-variant mt-1">
+            Zero-dependencies runtime
+          </div>
+</div>
+<div class="p-6 flex flex-col justify-center">
+<div class="text-on-surface-variant text-label-sm font-label-sm uppercase tracking-wider">Frame Stability</div>
+<div class="flex items-baseline gap-2 mt-2">
+<span class="text-headline-xl font-headline-xl text-primary font-semibold">99.9</span>
+<span class="text-label-md font-label-md text-on-surface-variant">%</span>
+</div>
+<div class="text-body-sm font-body-sm text-[#10b981] mt-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check</span>
+            120 FPS sostenidos
+          </div>
+</div>
+<div class="p-6 flex flex-col justify-center">
+<div class="text-on-surface-variant text-label-sm font-label-sm uppercase tracking-wider">Carga Main Thread</div>
+<div class="flex items-baseline gap-2 mt-2">
+<span class="text-headline-xl font-headline-xl text-primary font-semibold">-42</span>
+<span class="text-label-md font-label-md text-on-surface-variant">%</span>
+</div>
+<div class="text-body-sm font-body-sm text-on-surface-variant mt-1">
+            vs. Framer Motion / Spring
+          </div>
+</div>
+</div>
+<!-- Graph & Interactive Visual Simulator -->
+<div class="p-8 lg:p-12 flex flex-col lg:flex-row gap-8 items-center">
+<!-- SVG Spring Waveform Curve -->
+<div class="w-full lg:w-3/5 flex flex-col gap-4">
+<div class="flex items-center justify-between text-label-sm font-label-sm text-on-surface-variant">
+<span>CURVA DE AMORTIGUAMIENTO SUB-CRÍTICA (DAMPED OSCILLATION)</span>
+<span class="font-mono text-on-surface">k=280 | c=32 | m=1.0</span>
+</div>
+<!-- Precision SVG Oscillation -->
+<div class="w-full h-48 bg-surface-container-low rounded-lg p-4 flex items-center justify-center relative overflow-hidden">
+<!-- Grid lines inside graphic -->
+<div class="absolute inset-0 grid grid-cols-6 grid-rows-4 opacity-10 pointer-events-none">
+<div class="bg-on-surface"></div>
+<div class="bg-on-surface"></div>
+<div class="bg-on-surface"></div>
+<div class="bg-on-surface"></div>
+<div class="bg-on-surface"></div>
+<div class="bg-on-surface"></div>
+</div>
+<svg class="w-full h-full overflow-visible" preserveaspectratio="none" viewbox="0 0 600 160">
+<!-- Baseline equilibrium -->
+<line stroke="rgba(255,255,255,0.15)" stroke-dasharray="4 4" stroke-width="1" x1="0" x2="600" y1="80" y2="80"></line>
+<!-- Envelope Curves -->
+<path d="M0,15 Q150,55 300,74 T600,80" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="1.5"></path>
+<path d="M0,145 Q150,105 300,86 T600,80" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="1.5"></path>
+<!-- Spring physics active plot -->
+<path d="M 0 145 C 40 145, 60 15, 110 15 C 160 15, 190 120, 240 120 C 290 120, 320 62, 380 62 C 430 62, 470 89, 520 89 C 555 89, 575 80, 600 80" fill="none" stroke="#ffffff" stroke-width="2.5"></path>
+<!-- Interactive node point -->
+<circle cx="110" cy="15" fill="#10b981" r="5"></circle>
+<circle cx="240" cy="120" fill="#ffffff" r="3.5"></circle>
+<circle cx="380" cy="62" fill="#ffffff" r="3.5"></circle>
+</svg>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant">
+<span>t = 0ms (Touch Release)</span>
+<span class="text-on-surface">Settled: 184ms</span>
+<span>t = 300ms (Rest Target)</span>
+</div>
+</div>
+<!-- Interactive Physics Playground Node -->
+<div class="w-full lg:w-2/5 flex flex-col gap-4">
+<div class="p-6 rounded-lg bg-surface-container-low flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<span class="text-label-md font-label-md text-primary font-medium">Simulador Táctil Directo</span>
+<span class="text-label-sm font-label-sm text-[#10b981]">GPU Accel</span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+              Arrastra el nodo inferior para evaluar el feedback háptico simulado y la inercia instantánea sin latencia de frame.
+            </p>
+<!-- Touch surface container -->
+<div class="w-full h-32 bg-surface-container rounded-lg relative overflow-hidden flex items-center justify-center cursor-grab active:cursor-grabbing select-none" id="gesture-arena">
+<div class="absolute inset-0 flex items-center justify-center pointer-events-none opacity-20">
+<span class="text-[12px] font-mono tracking-widest text-on-surface">SUPERFICIE ACTIVA DE PRUEBA</span>
+</div>
+<div class="w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-lg transition-transform duration-75" id="gesture-puck">
+<span class="material-symbols-outlined text-[20px]">touch_app</span>
+</div>
+</div>
+<div class="flex items-center justify-between font-mono text-[11px] text-on-surface-variant">
+<span>Velocity: <span class="text-on-surface" id="val-vel">0.00</span> px/ms</span>
+<span>Delta: <span class="text-on-surface" id="val-delta">0.0</span> px</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Problem Breakdown & Engineering Challenge -->
+<section class="max-w-7xl mx-auto px-6 lg:px-12 py-16 w-full">
+<div class="max-w-3xl mb-12">
+<span class="text-label-sm font-label-sm text-on-surface-variant uppercase tracking-widest">01 / El Desafío Fundamental</span>
+<h2 class="text-headline-xl font-headline-xl text-primary mt-3">
+        Por qué las interfaces táctiles web tartamudean a 120Hz
+      </h2>
+<p class="text-body-lg font-body-lg text-on-surface-variant mt-4 leading-relaxed">
+        El modelo tradicional de interacción en la web vincula los eventos táctiles (`touchstart`, `touchmove`) al hilo de ejecución primario (Main Thread). Cuando la lógica de aplicación realiza trabajo de renderizado, cálculo de layout o recolección de basura (GC), la tasa de respuesta se fragmenta, introduciendo una latencia física perceptible por el usuario.
+      </p>
+</div>
+<!-- Comparative Architecture Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Traditional Arch -->
+<div class="bg-surface-container-low p-8 rounded-xl flex flex-col justify-between">
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<span class="text-label-sm font-label-sm uppercase tracking-wider text-error font-medium">Arquitectura Convencional</span>
+<span class="material-symbols-outlined text-error text-[20px]">warning</span>
+</div>
+<h3 class="text-headline-md font-headline-md text-primary">Main Thread Bottleneck</h3>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+            Las librerías clásicas serializan coordenadas a través del puente de eventos del navegador, mutan el DOM o el Virtual DOM en cada tick y compiten por ciclos de cómputo con la lógica del negocio.
+          </p>
+<div class="mt-4 flex flex-col gap-2 font-mono text-label-sm text-on-surface-variant bg-surface-container p-4 rounded-lg">
+<div class="flex items-center gap-2">
+<span class="text-error font-bold">✕</span> Touch Event disparado en Main Thread
+            </div>
+<div class="flex items-center gap-2">
+<span class="text-error font-bold">✕</span> Serialización y cálculo de React/Vue diff
+            </div>
+<div class="flex items-center gap-2">
+<span class="text-error font-bold">✕</span> Layout Thrashing &amp; GC Stutter (16ms+)
+            </div>
+</div>
+</div>
+<div class="mt-6 pt-4 text-on-surface-variant text-label-sm">
+          Resultado: Caídas a 45-60 FPS en pantallas ProMotion de 120Hz.
+        </div>
+</div>
+<!-- Aether UI Arch -->
+<div class="bg-surface-container-high p-8 rounded-xl flex flex-col justify-between">
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<span class="text-label-sm font-label-sm uppercase tracking-wider text-[#10b981] font-medium">Arquitectura Aether UI</span>
+<span class="material-symbols-outlined text-[#10b981] text-[20px]">bolt</span>
+</div>
+<h3 class="text-headline-md font-headline-md text-primary">Worker Desacoplado &amp; Direct GPU</h3>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+            Aether aísla el cálculo de vectores inerciales en un Web Worker en segundo plano que comunica coordenadas mediante <code class="text-primary font-mono bg-surface-container-highest px-1 py-0.5 rounded">SharedArrayBuffer</code>, aplicando transformaciones directamente al compositor sin tocar el Main Thread.
+          </p>
+<div class="mt-4 flex flex-col gap-2 font-mono text-label-sm text-on-surface bg-surface-container-lowest p-4 rounded-lg">
+<div class="flex items-center gap-2">
+<span class="text-[#10b981] font-bold">✓</span> Direct Pointer Stream a Offscreen Core
+            </div>
+<div class="flex items-center gap-2">
+<span class="text-[#10b981] font-bold">✓</span> Shared Memory Zero-Copy Interpolation
+            </div>
+<div class="flex items-center gap-2">
+<span class="text-[#10b981] font-bold">✓</span> Transform 3D commit a GPU compositor (&lt;1.5ms)
+            </div>
+</div>
+</div>
+<div class="mt-6 pt-4 text-[#10b981] text-label-sm font-medium">
+          Resultado: Fluidez cristalina y sostenida a 120Hz bajo cualquier carga.
+        </div>
+</div>
+</div>
+</section>
+<!-- Interactive Code Architecture Snippet -->
+<section class="max-w-7xl mx-auto px-6 lg:px-12 py-12 w-full">
+<div class="flex flex-col md:flex-row items-start md:items-end justify-between gap-4 mb-6">
+<div>
+<span class="text-label-sm font-label-sm text-on-surface-variant uppercase tracking-widest">02 / Implementación Técnica</span>
+<h2 class="text-headline-xl font-headline-xl text-primary mt-2">API Primitiva y Declarativa</h2>
+</div>
+<!-- Code Language Toggle & Copy Button -->
+<div class="flex items-center gap-2">
+<div class="p-1 rounded-lg bg-surface-container-low flex items-center">
+<button class="px-3 py-1 text-label-md font-label-md rounded bg-surface-container-high text-primary font-medium" id="btn-tab-ts">TypeScript</button>
+<button class="px-3 py-1 text-label-md font-label-md rounded text-on-surface-variant hover:text-primary" id="btn-tab-rs">Rust Core (WASM)</button>
+</div>
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-primary transition-all text-label-md font-label-md" id="copy-code-btn">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+<span id="copy-btn-text">Copiar</span>
+</button>
+</div>
+</div>
+<!-- Code Block Viewport -->
+<div class="bg-surface-container-lowest rounded-xl p-6 lg:p-8 font-mono text-[13px] leading-relaxed overflow-x-auto shadow-2xl">
+<div class="block" id="code-ts">
+<pre class="text-on-surface"><code><span class="text-on-surface-variant/60">// 1. Importación desacoplada desde el kernel elástico</span>
+<span class="text-primary font-bold">import</span> { createGestureSpring, ElasticSurface } <span class="text-primary font-bold">from</span> <span class="text-[#10b981]">'@aether/core'</span>;
+
+<span class="text-on-surface-variant/60">// 2. Configuración de parámetros físicos de alta precisión</span>
+<span class="text-primary font-bold">export const</span> sheetGesture = <span class="text-tertiary">createGestureSpring</span>({
+  <span class="text-secondary">mass</span>: <span class="text-[#e2e2e2]">0.8</span>,
+  <span class="text-secondary">stiffness</span>: <span class="text-[#e2e2e2]">320</span>,
+  <span class="text-secondary">damping</span>: <span class="text-[#e2e2e2]">28</span>,
+  <span class="text-secondary">velocityTracking</span>: {
+    <span class="text-secondary">windowMs</span>: <span class="text-[#e2e2e2]">40</span>,
+    <span class="text-secondary">predictiveFrames</span>: <span class="text-[#e2e2e2]">2</span> <span class="text-on-surface-variant/60">// Anticipación de inercia sub-frame</span>
+  },
+  <span class="text-tertiary">onFrame</span>: (state, transform) =&gt; {
+    <span class="text-on-surface-variant/60">// Ejecuta en el compositor sin generar garbage collection</span>
+    transform.<span class="text-tertiary">applyMatrix3d</span>(state.currentPosition, state.velocity);
+  }
+});
+
+<span class="text-on-surface-variant/60">// 3. Enlace directo a superficie de interacción táctil</span>
+ElasticSurface.<span class="text-tertiary">bind</span>(document.querySelector(<span class="hidden" code-rs"="">
+        <pre class="text-on-surface"><code><span class="text-on-surface-variant/60">// aether-core/src/solver.rs - Rust WASM Core</span>
+<span class="text-primary font-bold">use</span> wasm_bindgen::prelude::*;
+
+#[wasm_bindgen]
+<span class="text-primary font-bold">pub struct</span> <span class="text-tertiary">SpringSolver</span> {
+    stiffness: <span class="text-secondary">f32</span>,
+    damping: <span class="text-secondary">f32</span>,
+    mass: <span class="text-secondary">f32</span>,
+    velocity: <span class="text-secondary">f32</span>,
+}
+
+#[wasm_bindgen]
+<span class="text-primary font-bold">impl</span> <span class="text-tertiary">SpringSolver</span> {
+    <span class="text-primary font-bold">pub fn</span> <span class="text-tertiary">step</span>(&amp;<span class="text-primary font-bold">mut self</span>, dt: <span class="text-secondary">f32</span>, displacement: <span class="text-secondary">f32</span>) -&gt; <span class="text-secondary">f32</span> {
+        <span class="text-primary font-bold">let</span> spring_force = -<span class="text-primary font-bold">self</span>.stiffness * displacement;
+        <span class="text-primary font-bold">let</span> damping_force = -<span class="text-primary font-bold">self</span>.damping * <span class="text-primary font-bold">self</span>.velocity;
+        <span class="text-primary font-bold">let</span> acceleration = (spring_force + damping_force) / <span class="text-primary font-bold">self</span>.mass;
+        <span class="text-primary font-bold">self</span>.velocity += acceleration * dt;
+        <span class="text-primary font-bold">self</span>.velocity
+    }
+}</code></pre>
+      </span></code></pre></div>
+</div>
+</section>
+<!-- Component System & Gesture Primitives -->
+<section class="max-w-7xl mx-auto px-6 lg:px-12 py-16 w-full">
+<div class="max-w-3xl mb-12">
+<span class="text-label-sm font-label-sm text-on-surface-variant uppercase tracking-widest">03 / Primitivas Esenciales</span>
+<h2 class="text-headline-xl font-headline-xl text-primary mt-3">
+        Módulos físicos desacoplados
+      </h2>
+<p class="text-body-md font-body-md text-on-surface-variant mt-2">
+        Tres primitivas autónomas diseñadas para componer cualquier interacción dimensional táctil sobre navegadores modernos.
+      </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Primitive 1 -->
+<div class="bg-surface-container-low p-8 rounded-xl flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined text-[20px]">pan_tool_alt</span>
+</div>
+<span class="font-mono text-label-sm text-on-surface-variant">01 / PRIMITIVE</span>
+<h3 class="text-headline-md font-headline-md text-primary mt-1">InertialDrag</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-3 leading-relaxed">
+            Desplazamiento cinético continuo con límites elásticos exponenciales al estilo Apple Rubber-Banding. Mantiene la sensación de fricción física en bordes de contención.
+          </p>
+</div>
+<div class="mt-8 flex items-center justify-between text-label-sm font-label-sm text-on-surface-variant">
+<span>Memory: &lt;1.1 KB</span>
+<span class="text-[#10b981]">Zero Alloc</span>
+</div>
+</div>
+<!-- Primitive 2 -->
+<div class="bg-surface-container-low p-8 rounded-xl flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined text-[20px]">pinch</span>
+</div>
+<span class="font-mono text-label-sm text-on-surface-variant">02 / PRIMITIVE</span>
+<h3 class="text-headline-md font-headline-md text-primary mt-1">PinchZoomMatrix</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-3 leading-relaxed">
+            Multi-touch focal tracking con cálculo simultáneo de rotación, escala traslacional y corrección subpíxel para prevenir temblores visuales en dispositivos Android y OLED.
+          </p>
+</div>
+<div class="mt-8 flex items-center justify-between text-label-sm font-label-sm text-on-surface-variant">
+<span>Precision: float32</span>
+<span class="text-[#10b981]">GPU Composed</span>
+</div>
+</div>
+<!-- Primitive 3 -->
+<div class="bg-surface-container-low p-8 rounded-xl flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined text-[20px]">speed</span>
+</div>
+<span class="font-mono text-label-sm text-on-surface-variant">03 / PRIMITIVE</span>
+<h3 class="text-headline-md font-headline-md text-primary mt-1">VelocityDecay</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-3 leading-relaxed">
+            Desaceleración inercial basada en ecuaciones dinámicas de Navier-Stokes simplificadas para emular resistencia de aire y fricción superficial realista.
+          </p>
+</div>
+<div class="mt-8 flex items-center justify-between text-label-sm font-label-sm text-on-surface-variant">
+<span>Accuracy: 99.8%</span>
+<span class="text-[#10b981]">Instant Halt</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Impact, Adoption & Engineering Testimonial -->
+<section class="max-w-7xl mx-auto px-6 lg:px-12 py-16 w-full">
+<div class="bg-surface-container-low rounded-xl p-8 lg:p-12">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+<!-- Stats -->
+<div class="lg:col-span-5 flex flex-col gap-6">
+<span class="text-label-sm font-label-sm text-on-surface-variant uppercase tracking-widest">Adopción Global</span>
+<h3 class="text-display-lg-mobile font-display-lg-mobile text-primary leading-tight">
+            Validado en producción a escala masiva
+          </h3>
+<div class="grid grid-cols-2 gap-4 mt-2">
+<div>
+<div class="text-headline-xl font-headline-xl text-primary font-semibold">+180K</div>
+<div class="text-body-sm font-body-sm text-on-surface-variant mt-1">Descargas mensuales NPM</div>
+</div>
+<div>
+<div class="text-headline-xl font-headline-xl text-primary font-semibold">35+</div>
+<div class="text-body-sm font-body-sm text-on-surface-variant mt-1">Apps críticas en FinTech &amp; Design</div>
+</div>
+</div>
+</div>
+<!-- Testimonial Quote -->
+<div class="lg:col-span-7 bg-surface-container p-8 rounded-lg flex flex-col justify-between">
+<p class="text-body-lg font-body-lg text-on-surface italic leading-relaxed">
+            “Aether UI transformó por completo nuestra experiencia móvil en el checkout y carteras de trading. Conseguir que una gráfica interactiva pesada responda a 120 FPS sin un solo dropped frame era imposible en React Native Web hasta que integramos su worker físico desacoplado.”
+          </p>
+<div class="mt-6 flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-bright flex items-center justify-center font-bold text-primary">
+              JH
+            </div>
+<div>
+<div class="text-label-md font-label-md text-primary font-medium">Jonas Holm</div>
+<div class="text-body-sm font-body-sm text-on-surface-variant">Principal Frontend Architect @ Klarna Core</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Project Navigation & Architectural CTA -->
+<section class="max-w-7xl mx-auto px-6 lg:px-12 pt-8 pb-16 w-full flex flex-col gap-12">
+<!-- Next Project Link -->
+<a class="group w-full bg-surface-container-low hover:bg-surface-container-high transition-all p-8 lg:p-12 rounded-xl flex flex-col md:flex-row items-start md:items-center justify-between gap-6" href="#">
+<div class="flex flex-col gap-2">
+<span class="text-label-sm font-label-sm text-on-surface-variant uppercase tracking-widest">Siguiente Caso de Estudio</span>
+<h4 class="text-headline-xl font-headline-xl text-primary group-hover:translate-x-1 transition-transform">
+          Nova Workspace • Canvas Vectorial con CRDTs
+        </h4>
+<p class="text-body-md font-body-md text-on-surface-variant">
+          Infraestructura de colaboración en tiempo real con sincronización local-first y aceleración GPU.
+        </p>
+</div>
+<div class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-all">
+<span class="material-symbols-outlined text-[24px]">arrow_forward</span>
+</div>
+</a>
+<!-- Minimal Contact / Advisory Banner -->
+<div class="bg-surface-container-lowest p-8 lg:p-12 rounded-xl flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+<div class="max-w-xl flex flex-col gap-2">
+<h4 class="text-headline-lg font-headline-lg text-primary">
+          ¿Interesado en arquitectura de micro-interacciones o consultoría técnica?
+        </h4>
+<p class="text-body-md font-body-md text-on-surface-variant">
+          Disponible para asesorar proyectos de infraestructura frontend, sistemas de diseño de alta precisión y rendimiento web nativo.
+        </p>
+</div>
+<a class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-primary text-on-primary font-semibold text-label-md font-label-md hover:bg-surface-bright hover:text-primary transition-all" href="#">
+<span>Iniciar Conversación</span>
+<span class="material-symbols-outlined text-[18px]">mail</span>
+</a>
+</div>
+</section>
+<!-- Interactive Logic -->
+<script>
+    (function () {
+      // Tab switching for Code block
+      const btnTs = document.getElementById('btn-tab-ts');
+      const btnRs = document.getElementById('btn-tab-rs');
+      const codeTs = document.getElementById('code-ts');
+      const codeRs = document.getElementById('code-rs');
+
+      if (btnTs && btnRs && codeTs && codeRs) {
+        btnTs.addEventListener('click', () => {
+          btnTs.classList.add('bg-surface-container-high', 'text-primary');
+          btnTs.classList.remove('text-on-surface-variant');
+          btnRs.classList.remove('bg-surface-container-high', 'text-primary');
+          btnRs.classList.add('text-on-surface-variant');
+          codeTs.classList.remove('hidden');
+          codeRs.classList.add('hidden');
+        });
+
+        btnRs.addEventListener('click', () => {
+          btnRs.classList.add('bg-surface-container-high', 'text-primary');
+          btnRs.classList.remove('text-on-surface-variant');
+          btnTs.classList.remove('bg-surface-container-high', 'text-primary');
+          btnTs.classList.add('text-on-surface-variant');
+          codeRs.classList.remove('hidden');
+          codeTs.classList.add('hidden');
+        });
+      }
+
+      // Copy Code Button
+      const copyBtn = document.getElementById('copy-code-btn');
+      const copyText = document.getElementById('copy-btn-text');
+      if (copyBtn && copyText) {
+        copyBtn.addEventListener('click', () => {
+          const activeCode = codeTs && !codeTs.classList.contains('hidden') ? codeTs.innerText : (codeRs ? codeRs.innerText : '');
+          if (navigator.clipboard) {
+            navigator.clipboard.writeText(activeCode).then(() => {
+              copyText.textContent = '¡Copiado!';
+              setTimeout(() => {
+                copyText.textContent = 'Copiar';
+              }, 2000);
+            });
+          }
+        });
+      }
+
+      // Interactive Puck Simulation (Simple elastic drag physics demo)
+      const arena = document.getElementById('gesture-arena');
+      const puck = document.getElementById('gesture-puck');
+      const valVel = document.getElementById('val-vel');
+      const valDelta = document.getElementById('val-delta');
+
+      if (arena && puck) {
+        let isDragging = false;
+        let startX = 0;
+        let currentX = 0;
+        let lastTime = 0;
+
+        const onStart = (e) => {
+          isDragging = true;
+          startX = (e.clientX || (e.touches && e.touches[0].clientX)) - currentX;
+          lastTime = performance.now();
+        };
+
+        const onMove = (e) => {
+          if (!isDragging) return;
+          const clientX = e.clientX || (e.touches && e.touches[0].clientX);
+          const rawDelta = clientX - startX;
+          // Apply rubber-band damping resistance beyond 100px
+          const maxDist = 120;
+          if (Math.abs(rawDelta) > maxDist) {
+            const excess = Math.abs(rawDelta) - maxDist;
+            currentX = (rawDelta > 0 ? 1 : -1) * (maxDist + Math.pow(excess, 0.75));
+          } else {
+            currentX = rawDelta;
+          }
+
+          const now = performance.now();
+          const dt = Math.max(now - lastTime, 1);
+          const vel = Math.abs(currentX / dt).toFixed(2);
+          lastTime = now;
+
+          puck.style.transform = `translate3d(${currentX}px, 0, 0)`;
+          if (valDelta) valDelta.textContent = Math.round(currentX);
+          if (valVel) valVel.textContent = vel;
+        };
+
+        const onEnd = () => {
+          if (!isDragging) return;
+          isDragging = false;
+          // Spring return to rest (0)
+          puck.style.transition = 'transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275)';
+          puck.style.transform = 'translate3d(0, 0, 0)';
+          currentX = 0;
+          if (valDelta) valDelta.textContent = '0.0';
+          if (valVel) valVel.textContent = '0.00';
+          setTimeout(() => {
+            puck.style.transition = '';
+          }, 400);
+        };
+
+        arena.addEventListener('mousedown', onStart);
+        window.addEventListener('mousemove', onMove);
+        window.addEventListener('mouseup', onEnd);
+
+        arena.addEventListener('touchstart', onStart, { passive: true });
+        window.addEventListener('touchmove', onMove, { passive: true });
+        window.addEventListener('touchend', onEnd);
+      }
+    })();
+  </script>
+</div></main>
+<!-- Floating Pill Navigation (Apple / Cupertino inspired) -->
+<!-- Minimalist Clean Footer -->
+<footer class="w-full bg-surface-container-lowest/80 py-12 relative z-10 border-t border-outline-variant/15">
+<div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant">
+<div class="flex items-center gap-space-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-on-surface-variant"></span>
+<span class="font-body-sm text-body-sm">Diseñado con precisión e intención en Cupertino &amp; Zurich</span>
+</div>
+<div class="font-body-sm text-body-sm">
+        © 2025 Todos los derechos reservados. Edición Dossier.
+      </div>
+</div>
+</footer>
+<!-- Interactivity Scripts: Pure vanilla, zero runtime exceptions -->
+<script>
+    (function () {
+      const filterButtons = document.querySelectorAll('.filter-tab');
+      const projectItems = document.querySelectorAll('.project-item');
+      const gridBtn = document.getElementById('view-grid-btn');
+      const listBtn = document.getElementById('view-list-btn');
+
+      // Filter tabs functionality
+      filterButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const filter = btn.getAttribute('data-filter');
+
+          filterButtons.forEach(b => {
+            b.classList.remove('bg-primary', 'text-on-primary');
+            b.classList.add('text-on-surface-variant');
+          });
+          btn.classList.add('bg-primary', 'text-on-primary');
+          btn.classList.remove('text-on-surface-variant');
+
+          projectItems.forEach(item => {
+            const categories = item.getAttribute('data-category') || '';
+            if (filter === 'all' || categories.includes(filter)) {
+              item.style.display = '';
+            } else {
+              item.style.display = 'none';
+            }
+          });
+        });
+      });
+
+      // View switching logic (Grid vs Editorial Single Column List)
+      if (gridBtn && listBtn) {
+        listBtn.addEventListener('click', () => {
+          listBtn.classList.add('bg-surface-container-high', 'text-primary');
+          listBtn.classList.remove('text-on-surface-variant');
+          gridBtn.classList.remove('bg-surface-container-high', 'text-primary');
+          gridBtn.classList.add('text-on-surface-variant');
+
+          projectItems.forEach(item => {
+            item.classList.remove('lg:col-span-4', 'lg:col-span-6');
+            item.classList.add('lg:col-span-12');
+          });
+        });
+
+        gridBtn.addEventListener('click', () => {
+          gridBtn.classList.add('bg-surface-container-high', 'text-primary');
+          gridBtn.classList.remove('text-on-surface-variant');
+          listBtn.classList.remove('bg-surface-container-high', 'text-primary');
+          listBtn.classList.add('text-on-surface-variant');
+
+          projectItems.forEach((item, index) => {
+            item.classList.remove('lg:col-span-12');
+            if (index === 0) {
+              item.classList.add('lg:col-span-12');
+            } else if (index === 1 || index === 2) {
+              item.classList.add('lg:col-span-6');
+            } else {
+              item.classList.add('lg:col-span-4');
+            }
+          });
+        });
+      }
+    })();
+  </script>
+</body></html>

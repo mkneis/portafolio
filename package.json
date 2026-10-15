@@ -1,0 +1,11 @@
+{
+  "name": "portafolio-stitch",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "prepare:site": "node scripts/prepare.mjs",
+    "build": "node scripts/prepare.mjs && tailwindcss -i styles/input.css -o dist/assets/styles.css --minify",
+    "preview": "node scripts/serve.mjs"
+  },
+  "devDependencies": { "tailwindcss": "3.4.17" }
+}
