@@ -1,0 +1,44 @@
+export function personalize(html) {
+  html=html.replace('Portafolio personal: presentación, experiencia y competencias. Proyectos y diario técnico próximamente.','Mathias Kneis: Data & BI Analyst, desarrollo backend, automatización e integración. Experiencia, formación y competencias técnicas.');
+  const box='bg-surface-container-low/70 rounded-2xl p-6 lg:p-8 border border-surface-container-highest/40';
+  const tags=items=>`<div class="flex flex-wrap gap-2 mt-6">${items.map(t=>`<span class="px-3 py-1.5 rounded-full bg-surface-container-high text-xs">${t}</span>`).join('')}</div>`;
+  const section=(label,title,body)=>`<section><span class="eyebrow">${label}</span><h2 class="text-3xl font-bold mt-1 mb-6">${title}</h2>${body}</section>`;
+  const replace=(start,end,content)=>{const a=html.indexOf(start),b=html.indexOf(end,a);if(a<0||b<0)throw Error('Sección no encontrada: '+start);html=html.slice(0,a)+content+html.slice(b);};
+  html=html.replace(/<img[^>]*>/g,'<img alt="Monograma de Mathias Kneis" class="w-full h-full object-cover" src="./assets/portrait.svg">');
+  html=html.replaceAll('Disponible para proyectos','Datos · Backend · BI').replaceAll('Disponible para nuevos retos • Madrid, ES','Datos, tecnología y negocio • Valdivia, Chile').replaceAll('Madrid, ES','Valdivia, Chile').replaceAll('Staff Arch &amp; Craft','Data &amp; Backend');
+  html=html.replace('Senior Software Engineer &amp; Product Designer','Data &amp; BI Analyst · Backend Developer');
+  html=html.replace(/Especializado en la intersección[\s\S]*?rendimiento milimétrico\./,'Ingeniero Comercial y Máster en Big Data &amp; Data Science. Conecto las necesidades del negocio con soluciones de datos, desarrollo backend y automatización. Trabajo con Ruby on Rails, MongoDB, SQL, Power BI, Apache NiFi, Python y APIs REST para construir sistemas confiables y mejorar procesos. Integro IA aplicada al desarrollo con Codex, agentes, skills y MCPs.');
+  html=html.replace('Ver Proyectos Seleccionados','Ver experiencia').replace('href="./proyectos.html">\n<span class="">Ver experiencia','href="#experiencia">\n<span class="">Ver experiencia');
+  html=html.replace('CV · próximamente','Ver CV en esta página').replace('href="#cv-pendiente" aria-describedby="cv-pendiente"','href="#experiencia"');
+  html=html.replace('text-[18px]">download</span>','text-[18px]">description</span>');
+  html=html.replace(/<p class="demo-notice"[^>]*>[\s\S]*?<\/p>/,'');
+  replace('<!-- METRIC STATS BAR','<!-- 2. EXPERIENCIA',`<section class="grid grid-cols-2 lg:grid-cols-4 gap-4" aria-label="Áreas de especialización">${[['Datos & BI','Análisis y visualización'],['Backend','Servicios y APIs REST'],['Automatización','Integración y procesos ETL'],['Negocio','Soluciones con impacto']].map(([a,b])=>`<div class="${box}"><h2 class="text-xl font-bold">${a}</h2><p class="text-sm text-secondary mt-2">${b}</p></div>`).join('')}</section>`);
+  const jobs=[
+    ['Desarrollador de Software / Analista TI','NTT DATA - Moverick','2024 — Actualidad',[
+      'Desarrollo y mantenimiento de servicios backend con Ruby on Rails, Mongoid/MongoDB, Sidekiq y APIs REST para plataformas web y móviles de movilidad y transporte.',
+      'Implementación de APIs y reglas de negocio para movimientos, recargas, tokenización de tarjetas, medios de pago, perfiles y estados transaccionales.',
+      'Integración con servicios externos y autenticación con Keycloak/JWT, incorporando validaciones y manejo de errores.',
+      'Diseño y soporte de flujos ETL con Apache NiFi: extracción desde MongoDB, cargas a Greenplum y reportería en Superset/Looker.',
+      'Resolución de incidencias en ambientes de desarrollo, preproducción y producción junto a frontend, QA, infraestructura y negocio.',
+      'Uso transversal de Codex, agentes, skills y MCPs para análisis, implementación, revisión de código y pruebas.'
+    ],['Ruby on Rails','MongoDB','Sidekiq','APIs REST','Apache NiFi','Codex']],
+    ['Especialista en TI / Analítica freelance','Roots South &amp; Lifty Agency','2023 — Actualidad',[
+      'Desarrollo de un sistema de Business Intelligence integrando datos de Meta Ads, Shopify y Mercado Pago.',
+      'Automatización de extracción, consolidación y transformación de datos con Google Apps Script.',
+      'Creación de un informe unificado en Looker para controlar ventas, costos, márgenes, inversión publicitaria y desempeño comercial.'
+    ],['Business Intelligence','Google Apps Script','Looker','Shopify API','Mercado Pago API']],
+    ['Asesor técnico en modelos de negocio','Amuy SpA','2022',[
+      'Asesoría a microempresas en modelos de negocio, planes de comercialización y formulación de proyectos para fondos concursables vinculados al turismo regional.'
+    ],['Modelos de negocio','Comercialización','Formulación de proyectos']]
+  ];
+  replace('<!-- 2. EXPERIENCIA','<!-- 3. STACK',section('Trayectoria profesional','Experiencia laboral',`<div id="experiencia" class="flex flex-col gap-6">${jobs.map(([role,company,date,items,tech])=>`<article class="${box}"><div class="flex flex-col sm:flex-row justify-between gap-3"><div><h3 class="text-xl font-bold">${role}</h3><p class="text-sm text-secondary mt-1">${company}</p></div><span class="text-xs text-secondary">${date}</span></div><ul class="mt-6 space-y-2 text-sm text-secondary leading-relaxed">${items.map(s=>`<li>• ${s}</li>`).join('')}</ul>${tags(tech)}</article>`).join('')}</div>`));
+  const skills=[['Datos y BI',['Power BI','SQL','Excel','Superset','Looker','Tableau','KPI','Modelado y visualización']],['Backend y web',['Ruby','Ruby on Rails','Mongoid','Sidekiq','HTML','CSS','Bootstrap']],['Datos e integración',['MongoDB','PostgreSQL','MySQL','Apache NiFi','APIs REST','Postman']],['Python y ML',['Python','Pandas','NumPy','Scikit-learn','K-means','Análisis exploratorio']],['Plataformas e IA',['Git','WSL/Linux','Google Apps Script','Shopify API','Mercado Pago API','Codex','Agentes, skills y MCPs']],['Formas de trabajo',['Scrum','Análisis de requerimientos','Resolución de incidencias','Trabajo interdisciplinario']]];
+  replace('<!-- 3. STACK','<!-- 4. FORMACIÓN',section('Competencias técnicas','Stack técnico &amp; herramientas',`<div class="grid grid-cols-1 md:grid-cols-3 gap-6">${skills.map(([title,items])=>`<article class="${box}"><h3 class="text-lg font-bold">${title}</h3>${tags(items)}</article>`).join('')}</div><p class="text-sm text-secondary mt-6">Español nativo · Inglés escrito avanzado y oral intermedio.</p>`));
+  const education=[['Máster en Big Data &amp; Data Science','Universidad Complutense de Madrid','2021 — 2022'],['Ingeniería Comercial','Universidad Austral de Chile','2013 — 2019'],['Bootcamp Ruby on Rails','Desafío Latam / Talento Digital','2023'],['Diplomado Marketing Digital y Gestión Estratégica','AIEP / SENCE / Fundación Telefónica','2023']];
+  replace('<!-- 4. FORMACIÓN','<section aria-labelledby="explorar">',section('Aprendizaje y especialización','Formación &amp; certificaciones',`<div class="grid grid-cols-1 md:grid-cols-2 gap-6"><article class="${box}"><h3 class="text-xl font-bold mb-6">Formación académica</h3><div class="space-y-6">${education.map(([title,school,date])=>`<div><h4 class="font-semibold">${title}</h4><p class="text-sm text-secondary mt-1">${school}</p><p class="text-xs text-secondary mt-2">${date}</p></div>`).join('')}</div></article><article class="${box}"><h3 class="text-xl font-bold mb-6">Certificaciones</h3><ul class="space-y-6 text-sm text-secondary"><li>Google Data Analytics Professional Certificate</li><li>Scrum Fundamentals Certified</li><li>Data Science con Python — PUC</li></ul></article></div>`));
+  html=html.replace('Los datos de contacto se añadirán próximamente.','Conversemos sobre datos, desarrollo backend, automatización e integración de sistemas.').replace('Contacto · próximamente','Escríbeme').replace(/href="#contacto">\s*Escríbeme/,'href="mailto:mkneis@outlook.com">Escríbeme');
+  html=html.replace(/<!-- Social Links Bar -->[\s\S]*?(?=\n<\/div>\n<\/div>\n<\/section>)/,`<!-- Social Links Bar --><div class="flex flex-wrap gap-3 pt-2"><a class="back-link" href="https://github.com/mkneis" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a class="back-link" href="https://www.linkedin.com/in/mathiaskneis/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a class="back-link" href="mailto:mkneis@outlook.com">Email ↗</a></div>\n</div>`);
+  html=html.replace('aria-label="Code Repository"','aria-label="GitHub"').replace('aria-label="Global Network"','aria-label="LinkedIn"');
+  html=html.replace(/(<a aria-label="GitHub"[^>]*href=")[^"]*/, '$1https://github.com/mkneis').replace(/(<a aria-label="LinkedIn"[^>]*href=")[^"]*/, '$1https://www.linkedin.com/in/mathiaskneis/').replace(/(<a aria-label="Email"[^>]*href=")[^"]*/, '$1mailto:mkneis@outlook.com');
+  return html;
+}
